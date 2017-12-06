@@ -1,0 +1,437 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>iFlyDotNet.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:iFlyDotNet.Fakes.ShimMicVolume">
+            <summary>iFlyDotNet.MicVolume 的填充码类型</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.ShimMicVolume.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.ShimMicVolume.#ctor(iFlyDotNet.MicVolume)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="T:iFlyDotNet.Fakes.ShimMicVolume.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimMicVolume.AllInstances.vol_start">
+            <summary>设置 MicVolume.vol_start() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimMicVolume.AllInstances.vol_stop">
+            <summary>设置 MicVolume.vol_stop() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimMicVolume.AllInstances.volume_freshAddEventHandlerOfMicVolumeDataArrivedEventArgs">
+            <summary>设置 MicVolume.add_volume_fresh(EventHandler`1&lt;DataArrivedEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimMicVolume.AllInstances.volume_freshRemoveEventHandlerOfMicVolumeDataArrivedEventArgs">
+            <summary>设置 MicVolume.remove_volume_fresh(EventHandler`1&lt;DataArrivedEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimMicVolume.AllInstances.wis_back_DataAvailableObjectWaveInEventArgs">
+            <summary>设置 MicVolume.wis_back_DataAvailable(Object sender, WaveInEventArgs e) 的 填充码</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.ShimMicVolume.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.ShimMicVolume.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimMicVolume.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimMicVolume.Constructor">
+            <summary>设置 MicVolume.MicVolume() 的 填充码</summary>
+        </member>
+        <member name="T:iFlyDotNet.Fakes.ShimMicVolume.ShimDataArrivedEventArgs">
+            <summary>iFlyDotNet.MicVolume+DataArrivedEventArgs 的填充码类型</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.ShimMicVolume.ShimDataArrivedEventArgs.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.ShimMicVolume.ShimDataArrivedEventArgs.#ctor(iFlyDotNet.MicVolume.DataArrivedEventArgs)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="T:iFlyDotNet.Fakes.ShimMicVolume.ShimDataArrivedEventArgs.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.ShimMicVolume.ShimDataArrivedEventArgs.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.ShimMicVolume.ShimDataArrivedEventArgs.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimMicVolume.ShimDataArrivedEventArgs.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimMicVolume.ShimDataArrivedEventArgs.ConstructorSingle">
+            <summary>设置 DataArrivedEventArgs.DataArrivedEventArgs(Single rs) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimMicVolume.vol_start">
+            <summary>设置 MicVolume.vol_start() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimMicVolume.vol_stop">
+            <summary>设置 MicVolume.vol_stop() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimMicVolume.volume_freshAddEventHandlerOfMicVolumeDataArrivedEventArgs">
+            <summary>设置 MicVolume.add_volume_fresh(EventHandler`1&lt;DataArrivedEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimMicVolume.volume_freshRemoveEventHandlerOfMicVolumeDataArrivedEventArgs">
+            <summary>设置 MicVolume.remove_volume_fresh(EventHandler`1&lt;DataArrivedEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimMicVolume.wis_back_DataAvailableObjectWaveInEventArgs">
+            <summary>设置 MicVolume.wis_back_DataAvailable(Object sender, WaveInEventArgs e) 的 填充码</summary>
+        </member>
+        <member name="T:iFlyDotNet.Fakes.ShimiFlyISR">
+            <summary>iFlyDotNet.iFlyISR 的填充码类型</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.ShimiFlyISR.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.ShimiFlyISR.#ctor(iFlyDotNet.iFlyISR)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="T:iFlyDotNet.Fakes.ShimiFlyISR.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.AllInstances.Audio2TxtAsyncStringString">
+            <summary>设置 iFlyISR.Audio2TxtAsync(String inFile, String outFile) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.AllInstances.Audio2TxtStringString">
+            <summary>设置 iFlyISR.Audio2Txt(String inFile, String outFile) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.AllInstances.DataArrivedAddEventHandlerOfiFlyISRDataArrivedEventArgs">
+            <summary>设置 iFlyISR.add_DataArrived(EventHandler`1&lt;DataArrivedEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.AllInstances.DataArrivedRemoveEventHandlerOfiFlyISRDataArrivedEventArgs">
+            <summary>设置 iFlyISR.remove_DataArrived(EventHandler`1&lt;DataArrivedEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.AllInstances.GetResult">
+            <summary>设置 iFlyISR.GetResult() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.AllInstances.ISREndAddEventHandler">
+            <summary>设置 iFlyISR.add_ISREnd(EventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.AllInstances.ISREndRemoveEventHandler">
+            <summary>设置 iFlyISR.remove_ISREnd(EventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.AllInstances.RecEpStatesAddEventHandlerOfBoolean">
+            <summary>设置 iFlyISR.add_RecEpStates(EventHandler`1&lt;Boolean&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.AllInstances.RecEpStatesRemoveEventHandlerOfBoolean">
+            <summary>设置 iFlyISR.remove_RecEpStates(EventHandler`1&lt;Boolean&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.AllInstances.RecRunningAddEventHandlerOfiFlyISRDataArrivedEventArgs">
+            <summary>设置 iFlyISR.add_RecRunning(EventHandler`1&lt;DataArrivedEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.AllInstances.RecRunningRemoveEventHandlerOfiFlyISRDataArrivedEventArgs">
+            <summary>设置 iFlyISR.remove_RecRunning(EventHandler`1&lt;DataArrivedEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.AllInstances.StateCheck">
+            <summary>设置 iFlyISR.StateCheck() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.AllInstances.StateCheck_old">
+            <summary>设置 iFlyISR.StateCheck_old() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.AllInstances.StopRecoding">
+            <summary>设置 iFlyISR.StopRecoding() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.AllInstances.iatStart">
+            <summary>设置 iFlyISR.iatStart() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.AllInstances.iatStop">
+            <summary>设置 iFlyISR.iatStop() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.AllInstances.resulttime">
+            <summary>设置 iFlyISR.resulttime() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.AllInstances.wis_DataAvailableObjectWaveInEventArgs">
+            <summary>设置 iFlyISR.wis_DataAvailable(Object sender, WaveInEventArgs e) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.Audio2TxtAsyncStringString">
+            <summary>设置 iFlyISR.Audio2TxtAsync(String inFile, String outFile) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.Audio2TxtStringString">
+            <summary>设置 iFlyISR.Audio2Txt(String inFile, String outFile) 的 填充码</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.ShimiFlyISR.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.ShimiFlyISR.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.ConstructorStringString">
+            <summary>设置 iFlyISR.iFlyISR(String c1, String c2) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.DataArrivedAddEventHandlerOfiFlyISRDataArrivedEventArgs">
+            <summary>设置 iFlyISR.add_DataArrived(EventHandler`1&lt;DataArrivedEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.DataArrivedRemoveEventHandlerOfiFlyISRDataArrivedEventArgs">
+            <summary>设置 iFlyISR.remove_DataArrived(EventHandler`1&lt;DataArrivedEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.GetResult">
+            <summary>设置 iFlyISR.GetResult() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.ISREndAddEventHandler">
+            <summary>设置 iFlyISR.add_ISREnd(EventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.ISREndRemoveEventHandler">
+            <summary>设置 iFlyISR.remove_ISREnd(EventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.RecEpStatesAddEventHandlerOfBoolean">
+            <summary>设置 iFlyISR.add_RecEpStates(EventHandler`1&lt;Boolean&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.RecEpStatesRemoveEventHandlerOfBoolean">
+            <summary>设置 iFlyISR.remove_RecEpStates(EventHandler`1&lt;Boolean&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.RecRunningAddEventHandlerOfiFlyISRDataArrivedEventArgs">
+            <summary>设置 iFlyISR.add_RecRunning(EventHandler`1&lt;DataArrivedEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.RecRunningRemoveEventHandlerOfiFlyISRDataArrivedEventArgs">
+            <summary>设置 iFlyISR.remove_RecRunning(EventHandler`1&lt;DataArrivedEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="T:iFlyDotNet.Fakes.ShimiFlyISR.ShimDataArrivedEventArgs">
+            <summary>iFlyDotNet.iFlyISR+DataArrivedEventArgs 的填充码类型</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.ShimiFlyISR.ShimDataArrivedEventArgs.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.ShimiFlyISR.ShimDataArrivedEventArgs.#ctor(iFlyDotNet.iFlyISR.DataArrivedEventArgs)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="T:iFlyDotNet.Fakes.ShimiFlyISR.ShimDataArrivedEventArgs.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.ShimiFlyISR.ShimDataArrivedEventArgs.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.ShimiFlyISR.ShimDataArrivedEventArgs.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.ShimDataArrivedEventArgs.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.ShimDataArrivedEventArgs.ConstructorString">
+            <summary>设置 DataArrivedEventArgs.DataArrivedEventArgs(String rs) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.StateCheck">
+            <summary>设置 iFlyISR.StateCheck() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.StateCheck_old">
+            <summary>设置 iFlyISR.StateCheck_old() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.StopRecoding">
+            <summary>设置 iFlyISR.StopRecoding() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.iatStart">
+            <summary>设置 iFlyISR.iatStart() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.iatStop">
+            <summary>设置 iFlyISR.iatStop() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.resulttime">
+            <summary>设置 iFlyISR.resulttime() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyISR.wis_DataAvailableObjectWaveInEventArgs">
+            <summary>设置 iFlyISR.wis_DataAvailable(Object sender, WaveInEventArgs e) 的 填充码</summary>
+        </member>
+        <member name="T:iFlyDotNet.Fakes.ShimiFlyTTS">
+            <summary>iFlyDotNet.iFlyTTS 的填充码类型</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.ShimiFlyTTS.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.ShimiFlyTTS.#ctor(iFlyDotNet.iFlyTTS)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="T:iFlyDotNet.Fakes.ShimiFlyTTS.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.AllInstances.FinishedAddEventHandlerOfiFlyTTSJinDuEventArgs">
+            <summary>设置 iFlyTTS.add_Finished(EventHandler`1&lt;JinDuEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.AllInstances.FinishedRemoveEventHandlerOfiFlyTTSJinDuEventArgs">
+            <summary>设置 iFlyTTS.remove_Finished(EventHandler`1&lt;JinDuEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.AllInstances.MultiSpeekStringString">
+            <summary>设置 iFlyTTS.MultiSpeek(String SpeekText, String outWaveFlie) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.AllInstances.StructToBytesObject">
+            <summary>设置 iFlyTTS.StructToBytes(Object structure) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.AllInstances.maxGet">
+            <summary>设置 iFlyTTS.get_max() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.AllInstances.maxSetInt64">
+            <summary>设置 iFlyTTS.set_max(Int64 value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.AllInstances.rateGet">
+            <summary>设置 iFlyTTS.get_rate() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.AllInstances.rateSetInt32">
+            <summary>设置 iFlyTTS.set_rate(Int32 value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.AllInstances.speedGet">
+            <summary>设置 iFlyTTS.get_speed() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.AllInstances.speedSetenuSpeed">
+            <summary>设置 iFlyTTS.set_speed(enuSpeed value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.AllInstances.speekStringString">
+            <summary>设置 iFlyTTS.speek(String speekText, String outWaveFlie) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.AllInstances.speekerGet">
+            <summary>设置 iFlyTTS.get_speeker() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.AllInstances.speekerSetenuSpeeker">
+            <summary>设置 iFlyTTS.set_speeker(enuSpeeker value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.AllInstances.volGet">
+            <summary>设置 iFlyTTS.get_vol() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.AllInstances.volSetenuVol">
+            <summary>设置 iFlyTTS.set_vol(enuVol value) 的 填充码</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.ShimiFlyTTS.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.ShimiFlyTTS.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.ConstructorString">
+            <summary>设置 iFlyTTS.iFlyTTS(String configs) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.FinishedAddEventHandlerOfiFlyTTSJinDuEventArgs">
+            <summary>设置 iFlyTTS.add_Finished(EventHandler`1&lt;JinDuEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.FinishedRemoveEventHandlerOfiFlyTTSJinDuEventArgs">
+            <summary>设置 iFlyTTS.remove_Finished(EventHandler`1&lt;JinDuEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.MultiSpeekStringString">
+            <summary>设置 iFlyTTS.MultiSpeek(String SpeekText, String outWaveFlie) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.Ptr2StrIntPtr">
+            <summary>设置 iFlyTTS.Ptr2Str(IntPtr p) 的 填充码</summary>
+        </member>
+        <member name="T:iFlyDotNet.Fakes.ShimiFlyTTS.ShimJinDuEventArgs">
+            <summary>iFlyDotNet.iFlyTTS+JinDuEventArgs 的填充码类型</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.ShimiFlyTTS.ShimJinDuEventArgs.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.ShimiFlyTTS.ShimJinDuEventArgs.#ctor(iFlyDotNet.iFlyTTS.JinDuEventArgs)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="T:iFlyDotNet.Fakes.ShimiFlyTTS.ShimJinDuEventArgs.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.ShimiFlyTTS.ShimJinDuEventArgs.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.ShimiFlyTTS.ShimJinDuEventArgs.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.ShimJinDuEventArgs.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.ShimJinDuEventArgs.ConstructorInt32Int32Int32Int32">
+            <summary>设置 JinDuEventArgs.JinDuEventArgs(Int32 allLenth, Int32 allp, Int32 thisLenth, Int32 thisp) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.StructToBytesObject">
+            <summary>设置 iFlyTTS.StructToBytes(Object structure) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.maxGet">
+            <summary>设置 iFlyTTS.get_max() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.maxSetInt64">
+            <summary>设置 iFlyTTS.set_max(Int64 value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.rateGet">
+            <summary>设置 iFlyTTS.get_rate() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.rateSetInt32">
+            <summary>设置 iFlyTTS.set_rate(Int32 value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.speedGet">
+            <summary>设置 iFlyTTS.get_speed() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.speedSetenuSpeed">
+            <summary>设置 iFlyTTS.set_speed(enuSpeed value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.speekStringString">
+            <summary>设置 iFlyTTS.speek(String speekText, String outWaveFlie) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.speekerGet">
+            <summary>设置 iFlyTTS.get_speeker() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.speekerSetenuSpeeker">
+            <summary>设置 iFlyTTS.set_speeker(enuSpeeker value) 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.volGet">
+            <summary>设置 iFlyTTS.get_vol() 的 填充码</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.ShimiFlyTTS.volSetenuVol">
+            <summary>设置 iFlyTTS.set_vol(enuVol value) 的 填充码</summary>
+        </member>
+        <member name="T:iFlyDotNet.Fakes.StubMicVolume">
+            <summary>iFlyDotNet.MicVolume 的存根类型</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.StubMicVolume.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.StubMicVolume.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.StubMicVolume.InitializeStub">
+            <summary>初始化 type StubMicVolume 的新实例</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.StubMicVolume.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.StubMicVolume.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:iFlyDotNet.Fakes.StubiFlyISR">
+            <summary>iFlyDotNet.iFlyISR 的存根类型</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.StubiFlyISR.#ctor(System.String,System.String)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.StubiFlyISR.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.StubiFlyISR.InitializeStub">
+            <summary>初始化 type StubiFlyISR 的新实例</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.StubiFlyISR.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.StubiFlyISR.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:iFlyDotNet.Fakes.StubiFlyTTS">
+            <summary>iFlyDotNet.iFlyTTS 的存根类型</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.StubiFlyTTS.#ctor(System.String)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.StubiFlyTTS.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="M:iFlyDotNet.Fakes.StubiFlyTTS.InitializeStub">
+            <summary>初始化 type StubiFlyTTS 的新实例</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.StubiFlyTTS.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:iFlyDotNet.Fakes.StubiFlyTTS.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+    </members>
+</doc>

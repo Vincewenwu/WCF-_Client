@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="TicketSease" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.SeaseTicket.TicketSease.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.SeaseTicket.TicketSease.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.SeaseTicket.TicketSease.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="TicketSease_Selectchepiao_InputMessage">
+    <wsdl:part name="parameters" element="tns:Selectchepiao" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_Selectchepiao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectchepiaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_Selectbancionshijian_InputMessage">
+    <wsdl:part name="parameters" element="tns:Selectbancionshijian" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_Selectbancionshijian_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectbancionshijianResponse" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_Selectczhandianandpiaojia_InputMessage">
+    <wsdl:part name="parameters" element="tns:Selectczhandianandpiaojia" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_Selectczhandianandpiaojia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectczhandianandpiaojiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_SelectStaion_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectStaion" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_SelectStaion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectStaionResponse" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_Selelctticketzhuangtai_InputMessage">
+    <wsdl:part name="parameters" element="tns:Selelctticketzhuangtai" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_Selelctticketzhuangtai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelelctticketzhuangtaiResponse" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_selectchelaingdexiwei_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectchelaingdexiwei" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_selectchelaingdexiwei_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectchelaingdexiweiResponse" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_Updatexiweizhaungtai_InputMessage">
+    <wsdl:part name="parameters" element="tns:Updatexiweizhaungtai" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_Updatexiweizhaungtai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatexiweizhaungtaiResponse" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_Insectdingpiaoxinxi_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insectdingpiaoxinxi" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_Insectdingpiaoxinxi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsectdingpiaoxinxiResponse" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_Selectzuidapiohao_InputMessage">
+    <wsdl:part name="parameters" element="tns:Selectzuidapiohao" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_Selectzuidapiohao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectzuidapiohaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_DELETETicketingInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:DELETETicketingInformation" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_DELETETicketingInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DELETETicketingInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_DELETETicketingInformationtuipiao_InputMessage">
+    <wsdl:part name="parameters" element="tns:DELETETicketingInformationtuipiao" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_DELETETicketingInformationtuipiao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DELETETicketingInformationtuipiaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_SelectpiaojiaID_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectpiaojiaID" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_SelectpiaojiaID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectpiaojiaIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_Updatexiweizhaungtaiweibaofei_InputMessage">
+    <wsdl:part name="parameters" element="tns:Updatexiweizhaungtaiweibaofei" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_Updatexiweizhaungtaiweibaofei_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatexiweizhaungtaiweibaofeiResponse" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_MoHuSelectpiaoxinxi_InputMessage">
+    <wsdl:part name="parameters" element="tns:MoHuSelectpiaoxinxi" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_MoHuSelectpiaoxinxi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MoHuSelectpiaoxinxiResponse" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_selectchexing_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectchexing" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_selectchexing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectchexingResponse" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_selectpiaoxing_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectpiaoxing" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_selectpiaoxing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectpiaoxingResponse" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_selectpiaozhaungrtai_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectpiaozhaungrtai" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_selectpiaozhaungrtai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectpiaozhaungrtaiResponse" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_selectfeipiaoxinxi_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectfeipiaoxinxi" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_selectfeipiaoxinxi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectfeipiaoxinxiResponse" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_selectgenjuyonghuID_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectgenjuyonghuID" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_selectgenjuyonghuID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectgenjuyonghuIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_UPDATEdangqianpiaohao_InputMessage">
+    <wsdl:part name="parameters" element="tns:UPDATEdangqianpiaohao" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_UPDATEdangqianpiaohao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UPDATEdangqianpiaohaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_selectyanzhengma_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectyanzhengma" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_selectyanzhengma_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectyanzhengmaResponse" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_updateyanzhengma_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateyanzhengma" />
+  </wsdl:message>
+  <wsdl:message name="TicketSease_updateyanzhengma_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateyanzhengmaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="TicketSease">
+    <wsdl:operation name="Selectchepiao">
+      <wsdl:input wsaw:Action="http://tempuri.org/TicketSease/Selectchepiao" message="tns:TicketSease_Selectchepiao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TicketSease/SelectchepiaoResponse" message="tns:TicketSease_Selectchepiao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Selectbancionshijian">
+      <wsdl:input wsaw:Action="http://tempuri.org/TicketSease/Selectbancionshijian" message="tns:TicketSease_Selectbancionshijian_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TicketSease/SelectbancionshijianResponse" message="tns:TicketSease_Selectbancionshijian_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Selectczhandianandpiaojia">
+      <wsdl:input wsaw:Action="http://tempuri.org/TicketSease/Selectczhandianandpiaojia" message="tns:TicketSease_Selectczhandianandpiaojia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TicketSease/SelectczhandianandpiaojiaResponse" message="tns:TicketSease_Selectczhandianandpiaojia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectStaion">
+      <wsdl:input wsaw:Action="http://tempuri.org/TicketSease/SelectStaion" message="tns:TicketSease_SelectStaion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TicketSease/SelectStaionResponse" message="tns:TicketSease_SelectStaion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Selelctticketzhuangtai">
+      <wsdl:input wsaw:Action="http://tempuri.org/TicketSease/Selelctticketzhuangtai" message="tns:TicketSease_Selelctticketzhuangtai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TicketSease/SelelctticketzhuangtaiResponse" message="tns:TicketSease_Selelctticketzhuangtai_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectchelaingdexiwei">
+      <wsdl:input wsaw:Action="http://tempuri.org/TicketSease/selectchelaingdexiwei" message="tns:TicketSease_selectchelaingdexiwei_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TicketSease/selectchelaingdexiweiResponse" message="tns:TicketSease_selectchelaingdexiwei_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Updatexiweizhaungtai">
+      <wsdl:input wsaw:Action="http://tempuri.org/TicketSease/Updatexiweizhaungtai" message="tns:TicketSease_Updatexiweizhaungtai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TicketSease/UpdatexiweizhaungtaiResponse" message="tns:TicketSease_Updatexiweizhaungtai_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insectdingpiaoxinxi">
+      <wsdl:input wsaw:Action="http://tempuri.org/TicketSease/Insectdingpiaoxinxi" message="tns:TicketSease_Insectdingpiaoxinxi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TicketSease/InsectdingpiaoxinxiResponse" message="tns:TicketSease_Insectdingpiaoxinxi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Selectzuidapiohao">
+      <wsdl:input wsaw:Action="http://tempuri.org/TicketSease/Selectzuidapiohao" message="tns:TicketSease_Selectzuidapiohao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TicketSease/SelectzuidapiohaoResponse" message="tns:TicketSease_Selectzuidapiohao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DELETETicketingInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/TicketSease/DELETETicketingInformation" message="tns:TicketSease_DELETETicketingInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TicketSease/DELETETicketingInformationResponse" message="tns:TicketSease_DELETETicketingInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DELETETicketingInformationtuipiao">
+      <wsdl:input wsaw:Action="http://tempuri.org/TicketSease/DELETETicketingInformationtuipiao" message="tns:TicketSease_DELETETicketingInformationtuipiao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TicketSease/DELETETicketingInformationtuipiaoResponse" message="tns:TicketSease_DELETETicketingInformationtuipiao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectpiaojiaID">
+      <wsdl:input wsaw:Action="http://tempuri.org/TicketSease/SelectpiaojiaID" message="tns:TicketSease_SelectpiaojiaID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TicketSease/SelectpiaojiaIDResponse" message="tns:TicketSease_SelectpiaojiaID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Updatexiweizhaungtaiweibaofei">
+      <wsdl:input wsaw:Action="http://tempuri.org/TicketSease/Updatexiweizhaungtaiweibaofei" message="tns:TicketSease_Updatexiweizhaungtaiweibaofei_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TicketSease/UpdatexiweizhaungtaiweibaofeiResponse" message="tns:TicketSease_Updatexiweizhaungtaiweibaofei_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MoHuSelectpiaoxinxi">
+      <wsdl:input wsaw:Action="http://tempuri.org/TicketSease/MoHuSelectpiaoxinxi" message="tns:TicketSease_MoHuSelectpiaoxinxi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TicketSease/MoHuSelectpiaoxinxiResponse" message="tns:TicketSease_MoHuSelectpiaoxinxi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectchexing">
+      <wsdl:input wsaw:Action="http://tempuri.org/TicketSease/selectchexing" message="tns:TicketSease_selectchexing_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TicketSease/selectchexingResponse" message="tns:TicketSease_selectchexing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectpiaoxing">
+      <wsdl:input wsaw:Action="http://tempuri.org/TicketSease/selectpiaoxing" message="tns:TicketSease_selectpiaoxing_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TicketSease/selectpiaoxingResponse" message="tns:TicketSease_selectpiaoxing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectpiaozhaungrtai">
+      <wsdl:input wsaw:Action="http://tempuri.org/TicketSease/selectpiaozhaungrtai" message="tns:TicketSease_selectpiaozhaungrtai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TicketSease/selectpiaozhaungrtaiResponse" message="tns:TicketSease_selectpiaozhaungrtai_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectfeipiaoxinxi">
+      <wsdl:input wsaw:Action="http://tempuri.org/TicketSease/selectfeipiaoxinxi" message="tns:TicketSease_selectfeipiaoxinxi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TicketSease/selectfeipiaoxinxiResponse" message="tns:TicketSease_selectfeipiaoxinxi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectgenjuyonghuID">
+      <wsdl:input wsaw:Action="http://tempuri.org/TicketSease/selectgenjuyonghuID" message="tns:TicketSease_selectgenjuyonghuID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TicketSease/selectgenjuyonghuIDResponse" message="tns:TicketSease_selectgenjuyonghuID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UPDATEdangqianpiaohao">
+      <wsdl:input wsaw:Action="http://tempuri.org/TicketSease/UPDATEdangqianpiaohao" message="tns:TicketSease_UPDATEdangqianpiaohao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TicketSease/UPDATEdangqianpiaohaoResponse" message="tns:TicketSease_UPDATEdangqianpiaohao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectyanzhengma">
+      <wsdl:input wsaw:Action="http://tempuri.org/TicketSease/selectyanzhengma" message="tns:TicketSease_selectyanzhengma_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TicketSease/selectyanzhengmaResponse" message="tns:TicketSease_selectyanzhengma_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateyanzhengma">
+      <wsdl:input wsaw:Action="http://tempuri.org/TicketSease/updateyanzhengma" message="tns:TicketSease_updateyanzhengma_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/TicketSease/updateyanzhengmaResponse" message="tns:TicketSease_updateyanzhengma_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL集团客运综合管理.SeaseTicket.TicketSease" type="tns:TicketSease">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Selectchepiao">
+      <soap:operation soapAction="http://tempuri.org/TicketSease/Selectchepiao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Selectbancionshijian">
+      <soap:operation soapAction="http://tempuri.org/TicketSease/Selectbancionshijian" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Selectczhandianandpiaojia">
+      <soap:operation soapAction="http://tempuri.org/TicketSease/Selectczhandianandpiaojia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectStaion">
+      <soap:operation soapAction="http://tempuri.org/TicketSease/SelectStaion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Selelctticketzhuangtai">
+      <soap:operation soapAction="http://tempuri.org/TicketSease/Selelctticketzhuangtai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectchelaingdexiwei">
+      <soap:operation soapAction="http://tempuri.org/TicketSease/selectchelaingdexiwei" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Updatexiweizhaungtai">
+      <soap:operation soapAction="http://tempuri.org/TicketSease/Updatexiweizhaungtai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insectdingpiaoxinxi">
+      <soap:operation soapAction="http://tempuri.org/TicketSease/Insectdingpiaoxinxi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Selectzuidapiohao">
+      <soap:operation soapAction="http://tempuri.org/TicketSease/Selectzuidapiohao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DELETETicketingInformation">
+      <soap:operation soapAction="http://tempuri.org/TicketSease/DELETETicketingInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DELETETicketingInformationtuipiao">
+      <soap:operation soapAction="http://tempuri.org/TicketSease/DELETETicketingInformationtuipiao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectpiaojiaID">
+      <soap:operation soapAction="http://tempuri.org/TicketSease/SelectpiaojiaID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Updatexiweizhaungtaiweibaofei">
+      <soap:operation soapAction="http://tempuri.org/TicketSease/Updatexiweizhaungtaiweibaofei" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MoHuSelectpiaoxinxi">
+      <soap:operation soapAction="http://tempuri.org/TicketSease/MoHuSelectpiaoxinxi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectchexing">
+      <soap:operation soapAction="http://tempuri.org/TicketSease/selectchexing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectpiaoxing">
+      <soap:operation soapAction="http://tempuri.org/TicketSease/selectpiaoxing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectpiaozhaungrtai">
+      <soap:operation soapAction="http://tempuri.org/TicketSease/selectpiaozhaungrtai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectfeipiaoxinxi">
+      <soap:operation soapAction="http://tempuri.org/TicketSease/selectfeipiaoxinxi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectgenjuyonghuID">
+      <soap:operation soapAction="http://tempuri.org/TicketSease/selectgenjuyonghuID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UPDATEdangqianpiaohao">
+      <soap:operation soapAction="http://tempuri.org/TicketSease/UPDATEdangqianpiaohao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectyanzhengma">
+      <soap:operation soapAction="http://tempuri.org/TicketSease/selectyanzhengma" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateyanzhengma">
+      <soap:operation soapAction="http://tempuri.org/TicketSease/updateyanzhengma" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TicketSease">
+    <wsdl:port name="BLL集团客运综合管理.SeaseTicket.TicketSease" binding="tns:BLL集团客运综合管理.SeaseTicket.TicketSease">
+      <soap:address location="http://localhost:52701/BLL%E9%9B%86%E5%9B%A2%E5%AE%A2%E8%BF%90%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86.SeaseTicket.TicketSease.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

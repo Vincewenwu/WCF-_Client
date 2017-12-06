@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FRM_YonHuGuanLi_Update" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Update.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Update.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Update.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="FRM_YonHuGuanLi_Update_SelectYonHuLeiXing_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectYonHuLeiXing" />
+  </wsdl:message>
+  <wsdl:message name="FRM_YonHuGuanLi_Update_SelectYonHuLeiXing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectYonHuLeiXingResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_YonHuGuanLi_Update_SelectSuoShuCheZhan_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectSuoShuCheZhan" />
+  </wsdl:message>
+  <wsdl:message name="FRM_YonHuGuanLi_Update_SelectSuoShuCheZhan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectSuoShuCheZhanResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_YonHuGuanLi_Update_SelectYuanGongXinXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectYuanGongXinXi" />
+  </wsdl:message>
+  <wsdl:message name="FRM_YonHuGuanLi_Update_SelectYuanGongXinXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectYuanGongXinXiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_YonHuGuanLi_Update_UpdateYuanGongXinXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateYuanGongXinXi" />
+  </wsdl:message>
+  <wsdl:message name="FRM_YonHuGuanLi_Update_UpdateYuanGongXinXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateYuanGongXinXiResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FRM_YonHuGuanLi_Update">
+    <wsdl:operation name="SelectYonHuLeiXing">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_YonHuGuanLi_Update/SelectYonHuLeiXing" message="tns:FRM_YonHuGuanLi_Update_SelectYonHuLeiXing_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_YonHuGuanLi_Update/SelectYonHuLeiXingResponse" message="tns:FRM_YonHuGuanLi_Update_SelectYonHuLeiXing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectSuoShuCheZhan">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_YonHuGuanLi_Update/SelectSuoShuCheZhan" message="tns:FRM_YonHuGuanLi_Update_SelectSuoShuCheZhan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_YonHuGuanLi_Update/SelectSuoShuCheZhanResponse" message="tns:FRM_YonHuGuanLi_Update_SelectSuoShuCheZhan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectYuanGongXinXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_YonHuGuanLi_Update/SelectYuanGongXinXi" message="tns:FRM_YonHuGuanLi_Update_SelectYuanGongXinXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_YonHuGuanLi_Update/SelectYuanGongXinXiResponse" message="tns:FRM_YonHuGuanLi_Update_SelectYuanGongXinXi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateYuanGongXinXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_YonHuGuanLi_Update/UpdateYuanGongXinXi" message="tns:FRM_YonHuGuanLi_Update_UpdateYuanGongXinXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_YonHuGuanLi_Update/UpdateYuanGongXinXiResponse" message="tns:FRM_YonHuGuanLi_Update_UpdateYuanGongXinXi_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Update" type="tns:FRM_YonHuGuanLi_Update">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SelectYonHuLeiXing">
+      <soap:operation soapAction="http://tempuri.org/FRM_YonHuGuanLi_Update/SelectYonHuLeiXing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectSuoShuCheZhan">
+      <soap:operation soapAction="http://tempuri.org/FRM_YonHuGuanLi_Update/SelectSuoShuCheZhan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectYuanGongXinXi">
+      <soap:operation soapAction="http://tempuri.org/FRM_YonHuGuanLi_Update/SelectYuanGongXinXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateYuanGongXinXi">
+      <soap:operation soapAction="http://tempuri.org/FRM_YonHuGuanLi_Update/UpdateYuanGongXinXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FRM_YonHuGuanLi_Update">
+    <wsdl:port name="BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Update" binding="tns:BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Update">
+      <soap:address location="http://localhost:52701/BLL%E9%9B%86%E5%9B%A2%E5%AE%A2%E8%BF%90%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86.UserManager.FRM_YonHuGuanLi_Update.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

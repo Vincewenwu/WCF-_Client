@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6d1975e1-98c8-4e14-a9a5-acc68fb13d81" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52701/BLL集团客运综合管理.Rrepoter.RepoterCheLIng.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BLL集团客运综合管理.xsd" MetadataType="Schema" ID="70f1eb0a-4df7-4a3c-a566-e6915c2d0f49" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.Rrepoter.RepoterCheLIng.svc?xsd=xsd1" />
+    <MetadataFile FileName="BLL集团客运综合管理.disco" MetadataType="Disco" ID="758bba6c-4ae6-4887-b012-5e742a384310" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.Rrepoter.RepoterCheLIng.svc?disco" />
+    <MetadataFile FileName="BLL集团客运综合管理1.xsd" MetadataType="Schema" ID="87c46f91-6f96-4670-92b7-2bb4ccfb13bc" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.Rrepoter.RepoterCheLIng.svc?xsd=xsd0" />
+    <MetadataFile FileName="RepoterCheLIng.wsdl" MetadataType="Wsdl" ID="ae8077a5-9121-4096-a88b-90caa72e2989" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.Rrepoter.RepoterCheLIng.svc?wsdl" />
+    <MetadataFile FileName="BLL集团客运综合管理2.xsd" MetadataType="Schema" ID="e95db40f-bb66-4c78-96d2-3cd6785156cc" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.Rrepoter.RepoterCheLIng.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

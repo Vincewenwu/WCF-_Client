@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FRM_PiaoJuChuKu_Insert" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Insert.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Insert.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Insert.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="FRM_PiaoJuChuKu_Insert_SelectShiYonZhuangTai_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectShiYonZhuangTai" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PiaoJuChuKu_Insert_SelectShiYonZhuangTai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectShiYonZhuangTaiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PiaoJuChuKu_Insert_SelectYonHuBianHao_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectYonHuBianHao" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PiaoJuChuKu_Insert_SelectYonHuBianHao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectYonHuBianHaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PiaoJuChuKu_Insert_SelectYonHuByYonHuBianHao_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectYonHuByYonHuBianHao" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PiaoJuChuKu_Insert_SelectYonHuByYonHuBianHao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectYonHuByYonHuBianHaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PiaoJuChuKu_Insert_SelectPiaoJuKuCunXinXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectPiaoJuKuCunXinXi" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PiaoJuChuKu_Insert_SelectPiaoJuKuCunXinXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectPiaoJuKuCunXinXiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PiaoJuChuKu_Insert_InsertPiaoJuChuKu_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPiaoJuChuKu" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PiaoJuChuKu_Insert_InsertPiaoJuChuKu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPiaoJuChuKuResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PiaoJuChuKu_Insert_UpdatePiaoJuChuKu_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePiaoJuChuKu" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PiaoJuChuKu_Insert_UpdatePiaoJuChuKu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePiaoJuChuKuResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FRM_PiaoJuChuKu_Insert">
+    <wsdl:operation name="SelectShiYonZhuangTai">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_PiaoJuChuKu_Insert/SelectShiYonZhuangTai" message="tns:FRM_PiaoJuChuKu_Insert_SelectShiYonZhuangTai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_PiaoJuChuKu_Insert/SelectShiYonZhuangTaiResponse" message="tns:FRM_PiaoJuChuKu_Insert_SelectShiYonZhuangTai_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectYonHuBianHao">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_PiaoJuChuKu_Insert/SelectYonHuBianHao" message="tns:FRM_PiaoJuChuKu_Insert_SelectYonHuBianHao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_PiaoJuChuKu_Insert/SelectYonHuBianHaoResponse" message="tns:FRM_PiaoJuChuKu_Insert_SelectYonHuBianHao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectYonHuByYonHuBianHao">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_PiaoJuChuKu_Insert/SelectYonHuByYonHuBianHao" message="tns:FRM_PiaoJuChuKu_Insert_SelectYonHuByYonHuBianHao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_PiaoJuChuKu_Insert/SelectYonHuByYonHuBianHaoResponse" message="tns:FRM_PiaoJuChuKu_Insert_SelectYonHuByYonHuBianHao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectPiaoJuKuCunXinXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_PiaoJuChuKu_Insert/SelectPiaoJuKuCunXinXi" message="tns:FRM_PiaoJuChuKu_Insert_SelectPiaoJuKuCunXinXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_PiaoJuChuKu_Insert/SelectPiaoJuKuCunXinXiResponse" message="tns:FRM_PiaoJuChuKu_Insert_SelectPiaoJuKuCunXinXi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPiaoJuChuKu">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_PiaoJuChuKu_Insert/InsertPiaoJuChuKu" message="tns:FRM_PiaoJuChuKu_Insert_InsertPiaoJuChuKu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_PiaoJuChuKu_Insert/InsertPiaoJuChuKuResponse" message="tns:FRM_PiaoJuChuKu_Insert_InsertPiaoJuChuKu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePiaoJuChuKu">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_PiaoJuChuKu_Insert/UpdatePiaoJuChuKu" message="tns:FRM_PiaoJuChuKu_Insert_UpdatePiaoJuChuKu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_PiaoJuChuKu_Insert/UpdatePiaoJuChuKuResponse" message="tns:FRM_PiaoJuChuKu_Insert_UpdatePiaoJuChuKu_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Insert" type="tns:FRM_PiaoJuChuKu_Insert">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SelectShiYonZhuangTai">
+      <soap:operation soapAction="http://tempuri.org/FRM_PiaoJuChuKu_Insert/SelectShiYonZhuangTai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectYonHuBianHao">
+      <soap:operation soapAction="http://tempuri.org/FRM_PiaoJuChuKu_Insert/SelectYonHuBianHao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectYonHuByYonHuBianHao">
+      <soap:operation soapAction="http://tempuri.org/FRM_PiaoJuChuKu_Insert/SelectYonHuByYonHuBianHao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectPiaoJuKuCunXinXi">
+      <soap:operation soapAction="http://tempuri.org/FRM_PiaoJuChuKu_Insert/SelectPiaoJuKuCunXinXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPiaoJuChuKu">
+      <soap:operation soapAction="http://tempuri.org/FRM_PiaoJuChuKu_Insert/InsertPiaoJuChuKu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePiaoJuChuKu">
+      <soap:operation soapAction="http://tempuri.org/FRM_PiaoJuChuKu_Insert/UpdatePiaoJuChuKu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FRM_PiaoJuChuKu_Insert">
+    <wsdl:port name="BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Insert" binding="tns:BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Insert">
+      <soap:address location="http://localhost:52701/BLL%E9%9B%86%E5%9B%A2%E5%AE%A2%E8%BF%90%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Insert.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

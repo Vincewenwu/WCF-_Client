@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SelectQuasiDrivingType">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectQuasiDrivingTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SelectQuasiDrivingTypeResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectOrganization">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectOrganizationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SelectOrganizationResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectJiaShiYuanXinXiByDriverID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DriverID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectJiaShiYuanXinXiByDriverIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SelectJiaShiYuanXinXiByDriverIDResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectJiaShiYuanTuPian">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DriverID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectJiaShiYuanTuPianResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SelectJiaShiYuanTuPianResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateDriverXinXi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="QuasiDrivingTypeID" type="xs:int" />
+        <xs:element minOccurs="0" name="OrganizationID" type="xs:int" />
+        <xs:element minOccurs="0" name="ContactPhone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DriveAge" type="xs:int" />
+        <xs:element minOccurs="0" name="DrivingLicenseNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DriverNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Certificate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DrivingLicence" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="licensePeriod" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="DriverVehicleNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CertificateLicence" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Photo" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="DriverID" type="xs:int" />
+        <xs:element minOccurs="0" name="DriverMC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Sex" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Identification" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateDriverXinXiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateDriverXinXiResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

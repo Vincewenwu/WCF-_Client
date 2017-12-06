@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c359db0c-9f12-48a0-a487-636eab2468a7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52701/BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BLL集团客运综合管理.xsd" MetadataType="Schema" ID="97a8e210-fe01-428d-bbc0-aa8cf2d73682" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli.svc?xsd=xsd0" />
+    <MetadataFile FileName="BLL集团客运综合管理1.xsd" MetadataType="Schema" ID="e2f3df79-192d-4cb6-8674-b768140bf576" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli.svc?xsd=xsd1" />
+    <MetadataFile FileName="Campseizedmoneyguanli.wsdl" MetadataType="Wsdl" ID="693d9b22-c569-496a-a2f1-35d12d38fa8b" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli.svc?wsdl" />
+    <MetadataFile FileName="BLL集团客运综合管理.disco" MetadataType="Disco" ID="2eab041b-f345-4e58-9882-19b8851c2d74" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli.svc?disco" />
+    <MetadataFile FileName="BLL集团客运综合管理2.xsd" MetadataType="Schema" ID="985cc571-1bf5-4981-b012-4ace4d8a2d23" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

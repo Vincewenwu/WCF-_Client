@@ -1,0 +1,1940 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5194F0B3-C831-4BB9-8115-92DDACCCB322}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>集团客运综合管理系统</RootNamespace>
+    <AssemblyName>集团客运综合管理系统</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>..\..\..\..\项目开发经典实用技术精粹（151019）\新建文件夹\摄像头      直接运行\bin\Debug\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Controls">
+      <HintPath>..\..\..\..\项目开发经典实用技术精粹（151019）\新建文件夹\摄像头      直接运行\bin\Debug\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging">
+      <HintPath>..\..\..\..\项目开发经典实用技术精粹（151019）\新建文件夹\摄像头      直接运行\bin\Debug\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>..\..\..\..\项目开发经典实用技术精粹（151019）\新建文件夹\摄像头      直接运行\bin\Debug\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\..\..\..\项目开发经典实用技术精粹（151019）\新建文件夹\摄像头      直接运行\bin\Debug\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="CalculatorBox">
+      <HintPath>..\..\..\..\编程软件\第三方软件\CalculatorBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Clifton.Windows.Forms">
+      <HintPath>..\..\..\..\编程软件\第三方软件\Clifton.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DateEdit">
+      <HintPath>..\..\..\..\编程软件\第三方软件\DateEdit.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI">
+      <HintPath>F:\人脸识别\门禁识别\bin\Debug\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.World">
+      <HintPath>F:\人脸识别\门禁识别\bin\Debug\Emgu.CV.World.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="GlacialList1.3">
+      <HintPath>..\..\..\..\编程软件\第三方软件\GlacialList1.3.dll</HintPath>
+    </Reference>
+    <Reference Include="GlassButton">
+      <HintPath>..\..\..\..\编程软件\第三方软件\GlassButton.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>F:\人脸识别\门禁识别\bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="iFlyDotNet">
+      <HintPath>F:\人脸识别\门禁识别\bin\Debug\iFlyDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="iFlyDotNet.Fakes">
+      <HintPath>F:\人脸识别\门禁识别\FakesAssemblies\iFlyDotNet.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="King">
+      <HintPath>F:\人脸识别\门禁识别\bin\Debug\King.dll</HintPath>
+    </Reference>
+    <Reference Include="LineTextBox">
+      <HintPath>..\..\..\..\编程软件\第三方软件\LineTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="NAudio">
+      <HintPath>F:\人脸识别\门禁识别\bin\Debug\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="NiceDataGridView">
+      <HintPath>..\..\..\..\编程软件\第三方软件\NiceDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>F:\人脸识别\门禁识别\bin\Debug\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="OfficePickers">
+      <HintPath>D:\第三方软件\OfficePickers.dll</HintPath>
+    </Reference>
+    <Reference Include="RichTextBoxExtended">
+      <HintPath>..\..\..\..\编程软件\第三方软件\RichTextBoxExtended.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph">
+      <HintPath>F:\人脸识别\门禁识别\bin\Debug\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="faceDetect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="faceDetect.Designer.cs">
+      <DependentUpon>faceDetect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Login.designer.cs">
+      <DependentUpon>FRM_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Main.designer.cs">
+      <DependentUpon>FRM_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm主界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm主界面.designer.cs">
+      <DependentUpon>Frm主界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm登录窗体.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm登录窗体.Designer.cs">
+      <DependentUpon>Frm登录窗体.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Insert\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Update\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuRuKu\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuRuKu_Insert\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.chuzhanjicha.chezhanjicha\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.ClassesManage.FRM_BaoBanGuanLi\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.InspectTicketManager.FRM_JianPiaoXiTong\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.Rrepoter.RepoterCheLIng\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Insert\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Update\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuQuanXianGuanLi\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.USRE.USER_DENGLU\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Insert\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Update\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Insert\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Update\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanXinXi\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BLL集团客运综合管理.进站检查.Jinzhanjiancha\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_PublicStaticClass.cs" />
+    <Compile Include="Util\KingFaceDetect.cs" />
+    <Compile Include="Util\TTS.cs" />
+    <Compile Include="售票管理\Frm售票查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="售票管理\Frm售票查询.Designer.cs">
+      <DependentUpon>Frm售票查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="报班管理\FRM_BaoBanGuanLi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="报班管理\FRM_BaoBanGuanLi.designer.cs">
+      <DependentUpon>FRM_BaoBanGuanLi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="检查管理\Frm车辆检查单.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="检查管理\Frm车辆检查单.Designer.cs">
+      <DependentUpon>Frm车辆检查单.cs</DependentUpon>
+    </Compile>
+    <Compile Include="检查管理\Frm车辆稽查单.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="检查管理\Frm车辆稽查单.Designer.cs">
+      <DependentUpon>Frm车辆稽查单.cs</DependentUpon>
+    </Compile>
+    <Compile Include="检票系统\FRM_JianPiaoXiTong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="检票系统\FRM_JianPiaoXiTong.designer.cs">
+      <DependentUpon>FRM_JianPiaoXiTong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="检票系统\FRM_XiWeiZhuangTai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="检票系统\FRM_XiWeiZhuangTai.designer.cs">
+      <DependentUpon>FRM_XiWeiZhuangTai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="班次管理\Frm修改班次窗口.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="班次管理\Frm修改班次窗口.Designer.cs">
+      <DependentUpon>Frm修改班次窗口.cs</DependentUpon>
+    </Compile>
+    <Compile Include="班次管理\Frm修改途径站窗口.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="班次管理\Frm修改途径站窗口.Designer.cs">
+      <DependentUpon>Frm修改途径站窗口.cs</DependentUpon>
+    </Compile>
+    <Compile Include="班次管理\Frm新增班次窗口.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="班次管理\Frm新增班次窗口.Designer.cs">
+      <DependentUpon>Frm新增班次窗口.cs</DependentUpon>
+    </Compile>
+    <Compile Include="班次管理\Frm新增站点.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="班次管理\Frm新增站点.Designer.cs">
+      <DependentUpon>Frm新增站点.cs</DependentUpon>
+    </Compile>
+    <Compile Include="班次管理\Frm新增线路.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="班次管理\Frm新增线路.Designer.cs">
+      <DependentUpon>Frm新增线路.cs</DependentUpon>
+    </Compile>
+    <Compile Include="班次管理\Frm添加班次固定预留窗口.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="班次管理\Frm添加班次固定预留窗口.Designer.cs">
+      <DependentUpon>Frm添加班次固定预留窗口.cs</DependentUpon>
+    </Compile>
+    <Compile Include="班次管理\Frm添加途径站点.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="班次管理\Frm添加途径站点.Designer.cs">
+      <DependentUpon>Frm添加途径站点.cs</DependentUpon>
+    </Compile>
+    <Compile Include="班次管理\Frm班次打印.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="班次管理\Frm班次打印.Designer.cs">
+      <DependentUpon>Frm班次打印.cs</DependentUpon>
+    </Compile>
+    <Compile Include="班次管理\Frm班次管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="班次管理\Frm班次管理.Designer.cs">
+      <DependentUpon>Frm班次管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="班次管理\Frm班次长停窗口.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="班次管理\Frm班次长停窗口.Designer.cs">
+      <DependentUpon>Frm班次长停窗口.cs</DependentUpon>
+    </Compile>
+    <Compile Include="售票管理\Frm售票窗口.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="售票管理\Frm售票窗口.Designer.cs">
+      <DependentUpon>Frm售票窗口.cs</DependentUpon>
+    </Compile>
+    <Compile Include="广播系统\Frm自动语音播放.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="广播系统\Frm自动语音播放.Designer.cs">
+      <DependentUpon>Frm自动语音播放.cs</DependentUpon>
+    </Compile>
+    <Compile Include="检查管理\crp稽单报表.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crp稽单报表.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="检查管理\Frm出站稽单.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="检查管理\Frm出站稽单.Designer.cs">
+      <DependentUpon>Frm出站稽单.cs</DependentUpon>
+    </Compile>
+    <Compile Include="检查管理\Frm出站稽单报表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="检查管理\Frm出站稽单报表.Designer.cs">
+      <DependentUpon>Frm出站稽单报表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="检查管理\Frm车辆安全检查窗口.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="检查管理\Frm车辆安全检查窗口.Designer.cs">
+      <DependentUpon>Frm车辆安全检查窗口.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户管理\FRM_YonHuGuanLi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户管理\FRM_YonHuGuanLi.designer.cs">
+      <DependentUpon>FRM_YonHuGuanLi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户管理\FRM_YonHuGuanLi_Insert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户管理\FRM_YonHuGuanLi_Insert.designer.cs">
+      <DependentUpon>FRM_YonHuGuanLi_Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户管理\FRM_YonHuGuanLi_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户管理\FRM_YonHuGuanLi_Update.designer.cs">
+      <DependentUpon>FRM_YonHuGuanLi_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户管理\FRM_YonHuQuanXianGuanLi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户管理\FRM_YonHuQuanXianGuanLi.designer.cs">
+      <DependentUpon>FRM_YonHuQuanXianGuanLi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="票据管理\FRM_PiaoJuChuKu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="票据管理\FRM_PiaoJuChuKu.designer.cs">
+      <DependentUpon>FRM_PiaoJuChuKu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="票据管理\FRM_PiaoJuChuKu_Insert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="票据管理\FRM_PiaoJuChuKu_Insert.designer.cs">
+      <DependentUpon>FRM_PiaoJuChuKu_Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="票据管理\FRM_PiaoJuChuKu_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="票据管理\FRM_PiaoJuChuKu_Update.designer.cs">
+      <DependentUpon>FRM_PiaoJuChuKu_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="票据管理\FRM_PiaoJuRuKu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="票据管理\FRM_PiaoJuRuKu.designer.cs">
+      <DependentUpon>FRM_PiaoJuRuKu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="票据管理\FRM_PiaoJuRuKu_Insert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="票据管理\FRM_PiaoJuRuKu_Insert.designer.cs">
+      <DependentUpon>FRM_PiaoJuRuKu_Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="系统管理\Frm权限管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统管理\Frm权限管理.Designer.cs">
+      <DependentUpon>Frm权限管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="调度管理\CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="调度管理\Frm报班调度报表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="调度管理\Frm报班调度报表.Designer.cs">
+      <DependentUpon>Frm报班调度报表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="调度管理\Frm班次催客.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="调度管理\Frm班次催客.Designer.cs">
+      <DependentUpon>Frm班次催客.cs</DependentUpon>
+    </Compile>
+    <Compile Include="调度管理\Frm订票窗口.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="调度管理\Frm订票窗口.Designer.cs">
+      <DependentUpon>Frm订票窗口.cs</DependentUpon>
+    </Compile>
+    <Compile Include="调度管理\Frm调度报班.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="调度管理\Frm调度报班.Designer.cs">
+      <DependentUpon>Frm调度报班.cs</DependentUpon>
+    </Compile>
+    <Compile Include="财务管理\FRM_YingShouJiaoKuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="财务管理\FRM_YingShouJiaoKuan.designer.cs">
+      <DependentUpon>FRM_YingShouJiaoKuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\FRM_CheLiangGuangLi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\FRM_CheLiangGuangLi.designer.cs">
+      <DependentUpon>FRM_CheLiangGuangLi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\FRM_CheLiangGuangLi_Insert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\FRM_CheLiangGuangLi_Insert.designer.cs">
+      <DependentUpon>FRM_CheLiangGuangLi_Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\FRM_CheLiangGuangLi_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\FRM_CheLiangGuangLi_Update.designer.cs">
+      <DependentUpon>FRM_CheLiangGuangLi_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\FRM_JiaShiYuanGuanLi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\FRM_JiaShiYuanGuanLi.designer.cs">
+      <DependentUpon>FRM_JiaShiYuanGuanLi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\FRM_JiaShiYuanGuanLi_Insert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\FRM_JiaShiYuanGuanLi_Insert.designer.cs">
+      <DependentUpon>FRM_JiaShiYuanGuanLi_Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\FRM_JiaShiYuanGuanLi_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\FRM_JiaShiYuanGuanLi_Update.designer.cs">
+      <DependentUpon>FRM_JiaShiYuanGuanLi_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="车辆管理\FRM_JiaShiYuanXinXi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="车辆管理\FRM_JiaShiYuanXinXi.designer.cs">
+      <DependentUpon>FRM_JiaShiYuanXinXi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="集团客运管理系统DataSet.cs">
+      <DependentUpon>集团客运管理系统DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="集团客运管理系统DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>集团客运管理系统DataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="faceDetect.resx">
+      <DependentUpon>faceDetect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Login.resx">
+      <DependentUpon>FRM_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Main.resx">
+      <DependentUpon>FRM_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm主界面.resx">
+      <DependentUpon>Frm主界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm登录窗体.resx">
+      <DependentUpon>Frm登录窗体.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="售票管理\Frm售票查询.resx">
+      <DependentUpon>Frm售票查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="报班管理\FRM_BaoBanGuanLi.resx">
+      <DependentUpon>FRM_BaoBanGuanLi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="检查管理\Frm车辆检查单.resx">
+      <DependentUpon>Frm车辆检查单.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="检查管理\Frm车辆稽查单.resx">
+      <DependentUpon>Frm车辆稽查单.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="检票系统\FRM_JianPiaoXiTong.resx">
+      <DependentUpon>FRM_JianPiaoXiTong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="检票系统\FRM_XiWeiZhuangTai.resx">
+      <DependentUpon>FRM_XiWeiZhuangTai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="班次管理\Frm修改班次窗口.resx">
+      <DependentUpon>Frm修改班次窗口.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="班次管理\Frm修改途径站窗口.resx">
+      <DependentUpon>Frm修改途径站窗口.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="班次管理\Frm新增班次窗口.resx">
+      <DependentUpon>Frm新增班次窗口.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="班次管理\Frm新增站点.resx">
+      <DependentUpon>Frm新增站点.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="班次管理\Frm新增线路.resx">
+      <DependentUpon>Frm新增线路.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="班次管理\Frm添加班次固定预留窗口.resx">
+      <DependentUpon>Frm添加班次固定预留窗口.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="班次管理\Frm添加途径站点.resx">
+      <DependentUpon>Frm添加途径站点.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="班次管理\Frm班次打印.resx">
+      <DependentUpon>Frm班次打印.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="班次管理\Frm班次管理.resx">
+      <DependentUpon>Frm班次管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="班次管理\Frm班次长停窗口.resx">
+      <DependentUpon>Frm班次长停窗口.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="售票管理\Frm售票窗口.resx">
+      <DependentUpon>Frm售票窗口.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="广播系统\Frm自动语音播放.resx">
+      <DependentUpon>Frm自动语音播放.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="检查管理\crp稽单报表.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crp稽单报表.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="检查管理\Frm出站稽单.resx">
+      <DependentUpon>Frm出站稽单.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="检查管理\Frm出站稽单报表.resx">
+      <DependentUpon>Frm出站稽单报表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="检查管理\Frm车辆安全检查窗口.resx">
+      <DependentUpon>Frm车辆安全检查窗口.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户管理\FRM_YonHuGuanLi.resx">
+      <DependentUpon>FRM_YonHuGuanLi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户管理\FRM_YonHuGuanLi_Insert.resx">
+      <DependentUpon>FRM_YonHuGuanLi_Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户管理\FRM_YonHuGuanLi_Update.resx">
+      <DependentUpon>FRM_YonHuGuanLi_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户管理\FRM_YonHuQuanXianGuanLi.resx">
+      <DependentUpon>FRM_YonHuQuanXianGuanLi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="票据管理\FRM_PiaoJuChuKu.resx">
+      <DependentUpon>FRM_PiaoJuChuKu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="票据管理\FRM_PiaoJuChuKu_Insert.resx">
+      <DependentUpon>FRM_PiaoJuChuKu_Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="票据管理\FRM_PiaoJuChuKu_Update.resx">
+      <DependentUpon>FRM_PiaoJuChuKu_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="票据管理\FRM_PiaoJuRuKu.resx">
+      <DependentUpon>FRM_PiaoJuRuKu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="票据管理\FRM_PiaoJuRuKu_Insert.resx">
+      <DependentUpon>FRM_PiaoJuRuKu_Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统管理\Frm权限管理.resx">
+      <DependentUpon>Frm权限管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="调度管理\CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="调度管理\Frm报班调度报表.resx">
+      <DependentUpon>Frm报班调度报表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="调度管理\Frm班次催客.resx">
+      <DependentUpon>Frm班次催客.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="调度管理\Frm订票窗口.resx">
+      <DependentUpon>Frm订票窗口.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="调度管理\Frm调度报班.resx">
+      <DependentUpon>Frm调度报班.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="财务管理\FRM_YingShouJiaoKuan.resx">
+      <DependentUpon>FRM_YingShouJiaoKuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\FRM_CheLiangGuangLi.resx">
+      <DependentUpon>FRM_CheLiangGuangLi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\FRM_CheLiangGuangLi_Insert.resx">
+      <DependentUpon>FRM_CheLiangGuangLi_Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\FRM_CheLiangGuangLi_Update.resx">
+      <DependentUpon>FRM_CheLiangGuangLi_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\FRM_JiaShiYuanGuanLi.resx">
+      <DependentUpon>FRM_JiaShiYuanGuanLi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\FRM_JiaShiYuanGuanLi_Insert.resx">
+      <DependentUpon>FRM_JiaShiYuanGuanLi_Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\FRM_JiaShiYuanGuanLi_Update.resx">
+      <DependentUpon>FRM_JiaShiYuanGuanLi_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="车辆管理\FRM_JiaShiYuanXinXi.resx">
+      <DependentUpon>FRM_JiaShiYuanXinXi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Fakes\iFlyDotNet.fakes" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu\FRM_PiaoJuChuKu.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Insert\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Insert\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Insert\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Insert\FRM_PiaoJuChuKu_Insert.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Update\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Update\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Update\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Update\FRM_PiaoJuChuKu_Update.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuRuKu\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuRuKu\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuRuKu\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuRuKu\FRM_PiaoJuRuKu.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuRuKu_Insert\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuRuKu_Insert\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuRuKu_Insert\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuRuKu_Insert\FRM_PiaoJuRuKu_Insert.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli\Campseizedmoneyguanli.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli\集团客运综合管理系统.BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli.Campseizedmoney_yingshoudanResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli\集团客运综合管理系统.BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli.selectyonghuResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.chuzhanjicha.chezhanjicha\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.chuzhanjicha.chezhanjicha\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.chuzhanjicha.chezhanjicha\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.chuzhanjicha.chezhanjicha\chezhanjicha.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.chuzhanjicha.chezhanjicha\集团客运综合管理系统.BLL集团客运综合管理.chuzhanjicha.chezhanjicha.INSERTchuzhanxinxiResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.chuzhanjicha.chezhanjicha\集团客运综合管理系统.BLL集团客运综合管理.chuzhanjicha.chezhanjicha.selectbancirenshuertongshuResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.chuzhanjicha.chezhanjicha\集团客运综合管理系统.BLL集团客运综合管理.chuzhanjicha.chezhanjicha.selectbancirenshuResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.chuzhanjicha.chezhanjicha\集团客运综合管理系统.BLL集团客运综合管理.chuzhanjicha.chezhanjicha.selectbanciResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.chuzhanjicha.chezhanjicha\集团客运综合管理系统.BLL集团客运综合管理.chuzhanjicha.chezhanjicha.SelectchelaingIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.chuzhanjicha.chezhanjicha\集团客运综合管理系统.BLL集团客运综合管理.chuzhanjicha.chezhanjicha.SelectchelaingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.chuzhanjicha.chezhanjicha\集团客运综合管理系统.BLL集团客运综合管理.chuzhanjicha.chezhanjicha.SelectchelaingxinhaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.chuzhanjicha.chezhanjicha\集团客运综合管理系统.BLL集团客运综合管理.chuzhanjicha.chezhanjicha.selectcheliangjichadanResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.chuzhanjicha.chezhanjicha\集团客运综合管理系统.BLL集团客运综合管理.chuzhanjicha.chezhanjicha.selectcheshudanweiResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.chuzhanjicha.chezhanjicha\集团客运综合管理系统.BLL集团客运综合管理.chuzhanjicha.chezhanjicha.SELECTJICHAXIANGMUMINGXIResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.chuzhanjicha.chezhanjicha\集团客运综合管理系统.BLL集团客运综合管理.chuzhanjicha.chezhanjicha.selectjichaxiangmuResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.chuzhanjicha.chezhanjicha\集团客运综合管理系统.BLL集团客运综合管理.chuzhanjicha.chezhanjicha.selectjichaxianmuResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.chuzhanjicha.chezhanjicha\集团客运综合管理系统.BLL集团客运综合管理.chuzhanjicha.chezhanjicha.selectjichayuanResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.ClassesManage.FRM_BaoBanGuanLi\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.ClassesManage.FRM_BaoBanGuanLi\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.ClassesManage.FRM_BaoBanGuanLi\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.ClassesManage.FRM_BaoBanGuanLi\FRM_BaoBanGuanLi.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\Dispatchingmanagement.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.InsectdingpiaoxinxidiaoduResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.InsectYanZhnegMaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.SelectBanCheLiangXinXiResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.SelectBanCiOnDioaDuZhanResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.SelectbancixinxitoguangboResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.selectbaobanbanciResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.SelectCarBeLongResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.SelectcbocarbelongResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.SelectchaxundiyigezhandianResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.SelectchaxunzuihougezhandianResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.SelectCheLiangOnBanCiResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.SelectcheliangzhuangtaiResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.SelectdaibancheliangxinxiResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.SelectdendsTaionOnFrequencyIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.SelectdiyigezhandianResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.SelectFrequencyOnjianpiaokouResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.SelectFrequencyOnVehicleStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.SelectFrequencyXinXiResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.SelectjianpiaokouResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.SelectkaibanCheLiangXinXiResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.selectpiaojialeixingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.SelectpiaojiazuidariqiResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.selecttujinzhanResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.SelectzhandianpiaojiaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.SelectzuidapiohaodiaoduResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.SelelctxiweizhaungtaiResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\集团客运综合管理系统.BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.updatetimeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\FrequencyListManager.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.FrequencyListManager.CaculatepriceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.FrequencyListManager.IntsertStopsinrouteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.FrequencyListManager.SelectagainUpdatetujinStationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.FrequencyListManager.selectbanbiaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.FrequencyListManager.selectbancimingchengResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.FrequencyListManager.SelectBelongResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.FrequencyListManager.SelectFrequencyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.FrequencyListManager.SelectMAXStaionxuhaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.FrequencyListManager.SelectOnFrequencyIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.FrequencyListManager.SelectSeatTypeIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.FrequencyListManager.SelectStationtickpriceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.FrequencyListManager.SelectTicketPriceTypeIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.FrequencyListManager.SelectTuJinnewStaionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.FrequencyListManager.SelectTuJinStaionMoHuResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.FrequencyListManager.SelectTuJinStaionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.FrequencyListManager.selecttujinzhandianResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.FrequencyListManager.SelectUpdatetujinStationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.FrequencyListManager.SelectxhelaingxiweishuResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.FrequencyListManager.selectyonghuandleixingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.FrequencyListManager.selectzhongshuResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.FrequencyListManager.SeleectFrequencyIDtoVehicleIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.FrequencyListManager.UpdateallFrequencyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.FrequencyListManager.UpdateTuJinStationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect\NEWFrequencyInsect.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect.FrequencyInsectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect.InsectDriverFormResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect.LineLInsectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect.LineSelectOnResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect.LineSelectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect.StationInsectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect.StationSelectOnResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect.StationSelectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect.TicketEntranceSelectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect.VehicleSelectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate\NEWFrequencyUpdate.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate.FrequencyUPDATEResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate.LineSelectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate.SelectFrequencyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate.SelectFrequencyTIAOResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate.StationSelect1Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate.StationSelectTIAOResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate.TicketEntranceSelectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate\集团客运综合管理系统.BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate.VehicleSelectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.InspectTicketManager.FRM_JianPiaoXiTong\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.InspectTicketManager.FRM_JianPiaoXiTong\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.InspectTicketManager.FRM_JianPiaoXiTong\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.InspectTicketManager.FRM_JianPiaoXiTong\FRM_JianPiaoXiTong.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.Rrepoter.RepoterCheLIng\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.Rrepoter.RepoterCheLIng\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.Rrepoter.RepoterCheLIng\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.Rrepoter.RepoterCheLIng\RepoterCheLIng.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\TicketSease.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\集团客运综合管理系统.BLL集团客运综合管理.SeaseTicket.TicketSease.InsectdingpiaoxinxiResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\集团客运综合管理系统.BLL集团客运综合管理.SeaseTicket.TicketSease.MoHuSelectpiaoxinxiResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\集团客运综合管理系统.BLL集团客运综合管理.SeaseTicket.TicketSease.SelectbancionshijianResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\集团客运综合管理系统.BLL集团客运综合管理.SeaseTicket.TicketSease.selectchelaingdexiweiResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\集团客运综合管理系统.BLL集团客运综合管理.SeaseTicket.TicketSease.SelectchepiaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\集团客运综合管理系统.BLL集团客运综合管理.SeaseTicket.TicketSease.selectchexingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\集团客运综合管理系统.BLL集团客运综合管理.SeaseTicket.TicketSease.SelectczhandianandpiaojiaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\集团客运综合管理系统.BLL集团客运综合管理.SeaseTicket.TicketSease.selectfeipiaoxinxiResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\集团客运综合管理系统.BLL集团客运综合管理.SeaseTicket.TicketSease.selectgenjuyonghuIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\集团客运综合管理系统.BLL集团客运综合管理.SeaseTicket.TicketSease.SelectpiaojiaIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\集团客运综合管理系统.BLL集团客运综合管理.SeaseTicket.TicketSease.selectpiaoxingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\集团客运综合管理系统.BLL集团客运综合管理.SeaseTicket.TicketSease.selectpiaozhaungrtaiResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\集团客运综合管理系统.BLL集团客运综合管理.SeaseTicket.TicketSease.SelectStaionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\集团客运综合管理系统.BLL集团客运综合管理.SeaseTicket.TicketSease.selectyanzhengmaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\集团客运综合管理系统.BLL集团客运综合管理.SeaseTicket.TicketSease.SelectzuidapiohaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\集团客运综合管理系统.BLL集团客运综合管理.SeaseTicket.TicketSease.SelelctticketzhuangtaiResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\集团客运综合管理系统.BLL集团客运综合管理.SeaseTicket.TicketSease.updateyanzhengmaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi\FRM_YonHuGuanLi.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Insert\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Insert\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Insert\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Insert\FRM_YonHuGuanLi_Insert.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Update\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Update\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Update\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Update\FRM_YonHuGuanLi_Update.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuQuanXianGuanLi\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuQuanXianGuanLi\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuQuanXianGuanLi\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuQuanXianGuanLi\FRM_YonHuQuanXianGuanLi.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.USRE.USER_DENGLU\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.USRE.USER_DENGLU\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.USRE.USER_DENGLU\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.USRE.USER_DENGLU\USER_DENGLU.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi\FRM_CheLiangGuangLi.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Insert\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Insert\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Insert\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Insert\FRM_CheLiangGuangLi_Insert.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Update\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Update\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Update\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Update\FRM_CheLiangGuangLi_Update.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi\FRM_JiaShiYuanGuanLi.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Insert\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Insert\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Insert\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Insert\FRM_JiaShiYuanGuanLi_Insert.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Update\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Update\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Update\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Update\FRM_JiaShiYuanGuanLi_Update.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanXinXi\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanXinXi\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanXinXi\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanXinXi\FRM_JiaShiYuanXinXi.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.进站检查.Jinzhanjiancha\BLL集团客运综合管理.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.进站检查.Jinzhanjiancha\BLL集团客运综合管理1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.进站检查.Jinzhanjiancha\BLL集团客运综合管理2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.进站检查.Jinzhanjiancha\Jinzhanjiancha.wsdl" />
+    <None Include="Service References\BLL集团客运综合管理.进站检查.Jinzhanjiancha\集团客运综合管理系统.BLL集团客运综合管理.进站检查.Jinzhanjiancha.CarSaveCheak_SelectchelaingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.进站检查.Jinzhanjiancha\集团客运综合管理系统.BLL集团客运综合管理.进站检查.Jinzhanjiancha.CarSaveCheak_selectcheshudanweiResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.进站检查.Jinzhanjiancha\集团客运综合管理系统.BLL集团客运综合管理.进站检查.Jinzhanjiancha.CarSaveCheak_selectjichayuanResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.进站检查.Jinzhanjiancha\集团客运综合管理系统.BLL集团客运综合管理.进站检查.Jinzhanjiancha.insectjianchadanResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.进站检查.Jinzhanjiancha\集团客运综合管理系统.BLL集团客运综合管理.进站检查.Jinzhanjiancha.INSERTInspectionItemmingxiResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.进站检查.Jinzhanjiancha\集团客运综合管理系统.BLL集团客运综合管理.进站检查.Jinzhanjiancha.selectanquanjianxianmghuResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.进站检查.Jinzhanjiancha\集团客运综合管理系统.BLL集团客运综合管理.进站检查.Jinzhanjiancha.SELECTCEXINGONCHEPIHAOResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.进站检查.Jinzhanjiancha\集团客运综合管理系统.BLL集团客运综合管理.进站检查.Jinzhanjiancha.SelectCheLiangXinXiOnchepaihaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.进站检查.Jinzhanjiancha\集团客运综合管理系统.BLL集团客运综合管理.进站检查.Jinzhanjiancha.selectdongtaijianchadanResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BLL集团客运综合管理.进站检查.Jinzhanjiancha\集团客运综合管理系统.BLL集团客运综合管理.进站检查.Jinzhanjiancha.selectmnigxiResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="集团客运管理系统DataSet.xsc">
+      <DependentUpon>集团客运管理系统DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="集团客运管理系统DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>集团客运管理系统DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="集团客运管理系统DataSet.xss">
+      <DependentUpon>集团客运管理系统DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpgradeReport_Minus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\朝上按钮.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\朝下按钮.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12832591030001578.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2011031010094991582.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t01244af1a3d1063e41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Insert\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Update\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuRuKu\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuRuKu_Insert\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.chuzhanjicha.chezhanjicha\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.ClassesManage.FRM_BaoBanGuanLi\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.InspectTicketManager.FRM_JianPiaoXiTong\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.Rrepoter.RepoterCheLIng\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Insert\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Update\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuQuanXianGuanLi\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.USRE.USER_DENGLU\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Insert\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Update\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Insert\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Update\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanXinXi\" />
+    <WCFMetadataStorage Include="Service References\BLL集团客运综合管理.进站检查.Jinzhanjiancha\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.FrequencyListManager\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ拼音截图未命名.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ拼音截图未命名班次新增.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ拼音截图未命名班次新增1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ拼音截图未命名班次新增2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ拼音截图未命名班次新增3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ拼音截图未命名111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\修改班次.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\下一页.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.DispatchingManagement.DispatchingManagement\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.Rrepoter.RepoterCheLIng\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.Rrepoter.RepoterCheLIng\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.Rrepoter.RepoterCheLIng\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.Rrepoter.RepoterCheLIng\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\待卖.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\已售.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\报废.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\已检.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.SeaseTicket.TicketSease\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\废票.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\留票.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\按钮售票.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.chuzhanjicha.chezhanjicha\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.chuzhanjicha.chezhanjicha\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.chuzhanjicha.chezhanjicha\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.chuzhanjicha.chezhanjicha\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\..\..\..\项目开发经典实用技术精粹（151019）\新建文件夹\实现_WCF控件例子\WCF控件例子\WCF控件例子\WCF控件例子\lib\Office14\Microsoft.Office.Interop.Excel.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\退票.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\退票新.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\查询.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\清空.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\退出.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.USRE.USER_DENGLU\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.USRE.USER_DENGLU\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.USRE.USER_DENGLU\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.USRE.USER_DENGLU\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.进站检查.Jinzhanjiancha\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.进站检查.Jinzhanjiancha\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.进站检查.Jinzhanjiancha\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.进站检查.Jinzhanjiancha\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Insert\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Insert\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Insert\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Insert\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Update\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Update\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Update\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Update\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuRuKu\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuRuKu\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuRuKu\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuRuKu\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuRuKu_Insert\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuRuKu_Insert\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuRuKu_Insert\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuRuKu_Insert\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Insert\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Insert\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Insert\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Insert\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Update\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Update\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Update\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Update\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Insert\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Insert\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Insert\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Insert\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Update\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Update\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Update\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Update\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanXinXi\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanXinXi\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanXinXi\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanXinXi\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Insert\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Insert\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Insert\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Insert\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Update\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Update\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Update\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Update\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuQuanXianGuanLi\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuQuanXianGuanLi\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuQuanXianGuanLi\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.UserManager.FRM_YonHuQuanXianGuanLi\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.ClassesManage.FRM_BaoBanGuanLi\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.ClassesManage.FRM_BaoBanGuanLi\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.ClassesManage.FRM_BaoBanGuanLi\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.ClassesManage.FRM_BaoBanGuanLi\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.InspectTicketManager.FRM_JianPiaoXiTong\BLL集团客运综合管理.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.InspectTicketManager.FRM_JianPiaoXiTong\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.InspectTicketManager.FRM_JianPiaoXiTong\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BLL集团客运综合管理.InspectTicketManager.FRM_JianPiaoXiTong\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\%24this.Icon.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

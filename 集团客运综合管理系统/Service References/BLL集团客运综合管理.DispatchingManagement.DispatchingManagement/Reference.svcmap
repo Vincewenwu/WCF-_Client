@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1fa12447-993d-4a5f-90d8-ec24b6c3021a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52701/BLL集团客运综合管理.DispatchingManagement.DispatchingManagement.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BLL集团客运综合管理.xsd" MetadataType="Schema" ID="a93896ae-5fea-4de6-b435-6668e5b8e6cf" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.DispatchingManagement.Dispatchingmanagement.svc?xsd=xsd2" />
+    <MetadataFile FileName="BLL集团客运综合管理.disco" MetadataType="Disco" ID="56a04d1a-3b97-4ded-8c39-4ccdbe4cd474" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.DispatchingManagement.Dispatchingmanagement.svc?disco" />
+    <MetadataFile FileName="BLL集团客运综合管理1.xsd" MetadataType="Schema" ID="03c7e48d-f1fc-440a-a247-1dbc21645bb6" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.DispatchingManagement.Dispatchingmanagement.svc?xsd=xsd1" />
+    <MetadataFile FileName="Dispatchingmanagement.wsdl" MetadataType="Wsdl" ID="91360fc3-486f-4267-910b-d1c1f0200021" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.DispatchingManagement.Dispatchingmanagement.svc?wsdl" />
+    <MetadataFile FileName="BLL集团客运综合管理2.xsd" MetadataType="Schema" ID="33699554-ff07-464c-974d-16bee62d8c70" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.DispatchingManagement.Dispatchingmanagement.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

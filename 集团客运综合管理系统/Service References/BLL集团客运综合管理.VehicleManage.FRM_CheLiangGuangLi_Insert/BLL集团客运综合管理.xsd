@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SelectDriverNumber">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectDriverNumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SelectDriverNumberResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectJiaShiYuanByDriverNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DriverNumber" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectJiaShiYuanByDriverNumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SelectJiaShiYuanByDriverNumberResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectChengBaoGonSi">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectChengBaoGonSiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SelectChengBaoGonSiResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectCheShuDangWei">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectCheShuDangWeiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SelectCheShuDangWeiResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectCheLiangLeiXing">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectCheLiangLeiXingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SelectCheLiangLeiXingResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCheLiangXinXi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VehicleHostID" type="xs:int" />
+        <xs:element minOccurs="0" name="VehicleTypeID" type="xs:int" />
+        <xs:element minOccurs="0" name="CarBelongToTheUnitID" type="xs:int" />
+        <xs:element minOccurs="0" name="VehicleStateID" type="xs:int" />
+        <xs:element minOccurs="0" name="PolicyOfInsuranceID" type="xs:int" />
+        <xs:element minOccurs="0" name="VehicleLicenseID" type="xs:int" />
+        <xs:element minOccurs="0" name="DriverID" type="xs:int" />
+        <xs:element minOccurs="0" name="DriverAssistantID" type="xs:int" />
+        <xs:element minOccurs="0" name="CreateUserID" type="xs:int" />
+        <xs:element minOccurs="0" name="DeleteUserID" type="xs:int" />
+        <xs:element minOccurs="0" name="VehicleNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VehiclePaiNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RegisterDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Seating" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Loadheaver" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SafeInspectNo" type="xs:boolean" />
+        <xs:element minOccurs="0" name="EverySkySafeInspect" type="xs:boolean" />
+        <xs:element minOccurs="0" name="OneSkySafeInspectOneNext" type="xs:boolean" />
+        <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreateTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="LogicalDeleteTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCheLiangXinXiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertCheLiangXinXiResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertBaoXian">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UnderwriteCompanyID" type="xs:int" />
+        <xs:element minOccurs="0" name="CreateUserID" type="xs:int" />
+        <xs:element minOccurs="0" name="DeleteUserID" type="xs:int" />
+        <xs:element minOccurs="0" name="PolicyOfInsuranceMC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="BookbuildingDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Drivenvehicle" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="CommercialUnderwritingExecutive" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Bearingonetransportrisk" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="CreateTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="LogicalDeleteTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertBaoXianResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertBaoXianResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCheLiangZhengJianXingXi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateUserID" type="xs:int" />
+        <xs:element minOccurs="0" name="DeleteUserID" type="xs:int" />
+        <xs:element minOccurs="0" name="BusinessLine" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LineNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AttachedCardNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OperationOfTheNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Validity" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="SpringRecords" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="InspectionRecords" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="CompleteMaintenance" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Rating" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="TravelCard" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="MonthMaintainSun" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="LiquefiedPetroleumGasCard" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="CreateTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="LogicalDeleteTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCheLiangZhengJianXingXiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertCheLiangZhengJianXingXiResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCheZhu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateUserID" type="xs:int" />
+        <xs:element minOccurs="0" name="DeleteUserID" type="xs:int" />
+        <xs:element minOccurs="0" name="VehicleHostMC" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ContactPhone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Identification" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreateTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="LogicalDeleteTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCheZhuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertCheZhuResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertXiWei">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VehicleID" type="xs:int" />
+        <xs:element minOccurs="0" name="SeatsTypeID" type="xs:int" />
+        <xs:element minOccurs="0" name="SeatsStateID" type="xs:int" />
+        <xs:element minOccurs="0" name="SeatNoMC" type="xs:int" />
+        <xs:element minOccurs="0" name="UseNo" type="xs:boolean" />
+        <xs:element minOccurs="0" name="CreateUserID" type="xs:int" />
+        <xs:element minOccurs="0" name="DeleteUserID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertXiWeiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertXiWeiResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectXiweigeshu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VehicleID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelectXiweigeshuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SelectXiweigeshuResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

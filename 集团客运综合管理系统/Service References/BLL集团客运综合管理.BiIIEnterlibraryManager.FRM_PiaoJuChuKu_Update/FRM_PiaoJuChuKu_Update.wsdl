@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FRM_PiaoJuChuKu_Update" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Update.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Update.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Update.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="FRM_PiaoJuChuKu_Update_SelectYuanGon_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectYuanGon" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PiaoJuChuKu_Update_SelectYuanGon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectYuanGonResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PiaoJuChuKu_Update_SelectShiYongZhuangTai_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectShiYongZhuangTai" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PiaoJuChuKu_Update_SelectShiYongZhuangTai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectShiYongZhuangTaiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PiaoJuChuKu_Update_SelectPiaoJuChuKu_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectPiaoJuChuKu" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PiaoJuChuKu_Update_SelectPiaoJuChuKu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectPiaoJuChuKuResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PiaoJuChuKu_Update_UpdatePiaoJuChuKuXinXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePiaoJuChuKuXinXi" />
+  </wsdl:message>
+  <wsdl:message name="FRM_PiaoJuChuKu_Update_UpdatePiaoJuChuKuXinXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePiaoJuChuKuXinXiResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FRM_PiaoJuChuKu_Update">
+    <wsdl:operation name="SelectYuanGon">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_PiaoJuChuKu_Update/SelectYuanGon" message="tns:FRM_PiaoJuChuKu_Update_SelectYuanGon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_PiaoJuChuKu_Update/SelectYuanGonResponse" message="tns:FRM_PiaoJuChuKu_Update_SelectYuanGon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectShiYongZhuangTai">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_PiaoJuChuKu_Update/SelectShiYongZhuangTai" message="tns:FRM_PiaoJuChuKu_Update_SelectShiYongZhuangTai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_PiaoJuChuKu_Update/SelectShiYongZhuangTaiResponse" message="tns:FRM_PiaoJuChuKu_Update_SelectShiYongZhuangTai_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectPiaoJuChuKu">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_PiaoJuChuKu_Update/SelectPiaoJuChuKu" message="tns:FRM_PiaoJuChuKu_Update_SelectPiaoJuChuKu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_PiaoJuChuKu_Update/SelectPiaoJuChuKuResponse" message="tns:FRM_PiaoJuChuKu_Update_SelectPiaoJuChuKu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePiaoJuChuKuXinXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_PiaoJuChuKu_Update/UpdatePiaoJuChuKuXinXi" message="tns:FRM_PiaoJuChuKu_Update_UpdatePiaoJuChuKuXinXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_PiaoJuChuKu_Update/UpdatePiaoJuChuKuXinXiResponse" message="tns:FRM_PiaoJuChuKu_Update_UpdatePiaoJuChuKuXinXi_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Update" type="tns:FRM_PiaoJuChuKu_Update">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SelectYuanGon">
+      <soap:operation soapAction="http://tempuri.org/FRM_PiaoJuChuKu_Update/SelectYuanGon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectShiYongZhuangTai">
+      <soap:operation soapAction="http://tempuri.org/FRM_PiaoJuChuKu_Update/SelectShiYongZhuangTai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectPiaoJuChuKu">
+      <soap:operation soapAction="http://tempuri.org/FRM_PiaoJuChuKu_Update/SelectPiaoJuChuKu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePiaoJuChuKuXinXi">
+      <soap:operation soapAction="http://tempuri.org/FRM_PiaoJuChuKu_Update/UpdatePiaoJuChuKuXinXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FRM_PiaoJuChuKu_Update">
+    <wsdl:port name="BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Update" binding="tns:BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Update">
+      <soap:address location="http://localhost:52701/BLL%E9%9B%86%E5%9B%A2%E5%AE%A2%E8%BF%90%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Update.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

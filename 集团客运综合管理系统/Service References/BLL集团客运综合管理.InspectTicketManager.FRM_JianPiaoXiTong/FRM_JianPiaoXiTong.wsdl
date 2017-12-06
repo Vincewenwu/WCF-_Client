@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FRM_JianPiaoXiTong" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.InspectTicketManager.FRM_JianPiaoXiTong.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.InspectTicketManager.FRM_JianPiaoXiTong.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.InspectTicketManager.FRM_JianPiaoXiTong.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="FRM_JianPiaoXiTong_SelectCheLiangBianHao_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheLiangBianHao" />
+  </wsdl:message>
+  <wsdl:message name="FRM_JianPiaoXiTong_SelectCheLiangBianHao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheLiangBianHaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_JianPiaoXiTong_SelectCheLiangByCheLiangBianHao_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheLiangByCheLiangBianHao" />
+  </wsdl:message>
+  <wsdl:message name="FRM_JianPiaoXiTong_SelectCheLiangByCheLiangBianHao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheLiangByCheLiangBianHaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_JianPiaoXiTong_SelectCheLiangXiWeiZhangTai_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheLiangXiWeiZhangTai" />
+  </wsdl:message>
+  <wsdl:message name="FRM_JianPiaoXiTong_SelectCheLiangXiWeiZhangTai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheLiangXiWeiZhangTaiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_JianPiaoXiTong_SelectDaiJianCheLiang_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectDaiJianCheLiang" />
+  </wsdl:message>
+  <wsdl:message name="FRM_JianPiaoXiTong_SelectDaiJianCheLiang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectDaiJianCheLiangResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_JianPiaoXiTong_SelectJianPiaoXinXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectJianPiaoXinXi" />
+  </wsdl:message>
+  <wsdl:message name="FRM_JianPiaoXiTong_SelectJianPiaoXinXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectJianPiaoXinXiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_JianPiaoXiTong_SelectBaoBanXinXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectBaoBanXinXi" />
+  </wsdl:message>
+  <wsdl:message name="FRM_JianPiaoXiTong_SelectBaoBanXinXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectBaoBanXinXiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_JianPiaoXiTong_UpdateSeatsState_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSeatsState" />
+  </wsdl:message>
+  <wsdl:message name="FRM_JianPiaoXiTong_UpdateSeatsState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSeatsStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_JianPiaoXiTong_SelectPiaoHaoByCheLiangID_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectPiaoHaoByCheLiangID" />
+  </wsdl:message>
+  <wsdl:message name="FRM_JianPiaoXiTong_SelectPiaoHaoByCheLiangID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectPiaoHaoByCheLiangIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FRM_JianPiaoXiTong">
+    <wsdl:operation name="SelectCheLiangBianHao">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_JianPiaoXiTong/SelectCheLiangBianHao" message="tns:FRM_JianPiaoXiTong_SelectCheLiangBianHao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_JianPiaoXiTong/SelectCheLiangBianHaoResponse" message="tns:FRM_JianPiaoXiTong_SelectCheLiangBianHao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectCheLiangByCheLiangBianHao">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_JianPiaoXiTong/SelectCheLiangByCheLiangBianHao" message="tns:FRM_JianPiaoXiTong_SelectCheLiangByCheLiangBianHao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_JianPiaoXiTong/SelectCheLiangByCheLiangBianHaoResponse" message="tns:FRM_JianPiaoXiTong_SelectCheLiangByCheLiangBianHao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectCheLiangXiWeiZhangTai">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_JianPiaoXiTong/SelectCheLiangXiWeiZhangTai" message="tns:FRM_JianPiaoXiTong_SelectCheLiangXiWeiZhangTai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_JianPiaoXiTong/SelectCheLiangXiWeiZhangTaiResponse" message="tns:FRM_JianPiaoXiTong_SelectCheLiangXiWeiZhangTai_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectDaiJianCheLiang">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_JianPiaoXiTong/SelectDaiJianCheLiang" message="tns:FRM_JianPiaoXiTong_SelectDaiJianCheLiang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_JianPiaoXiTong/SelectDaiJianCheLiangResponse" message="tns:FRM_JianPiaoXiTong_SelectDaiJianCheLiang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectJianPiaoXinXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_JianPiaoXiTong/SelectJianPiaoXinXi" message="tns:FRM_JianPiaoXiTong_SelectJianPiaoXinXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_JianPiaoXiTong/SelectJianPiaoXinXiResponse" message="tns:FRM_JianPiaoXiTong_SelectJianPiaoXinXi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectBaoBanXinXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_JianPiaoXiTong/SelectBaoBanXinXi" message="tns:FRM_JianPiaoXiTong_SelectBaoBanXinXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_JianPiaoXiTong/SelectBaoBanXinXiResponse" message="tns:FRM_JianPiaoXiTong_SelectBaoBanXinXi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSeatsState">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_JianPiaoXiTong/UpdateSeatsState" message="tns:FRM_JianPiaoXiTong_UpdateSeatsState_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_JianPiaoXiTong/UpdateSeatsStateResponse" message="tns:FRM_JianPiaoXiTong_UpdateSeatsState_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectPiaoHaoByCheLiangID">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_JianPiaoXiTong/SelectPiaoHaoByCheLiangID" message="tns:FRM_JianPiaoXiTong_SelectPiaoHaoByCheLiangID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_JianPiaoXiTong/SelectPiaoHaoByCheLiangIDResponse" message="tns:FRM_JianPiaoXiTong_SelectPiaoHaoByCheLiangID_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL集团客运综合管理.InspectTicketManager.FRM_JianPiaoXiTong" type="tns:FRM_JianPiaoXiTong">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SelectCheLiangBianHao">
+      <soap:operation soapAction="http://tempuri.org/FRM_JianPiaoXiTong/SelectCheLiangBianHao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectCheLiangByCheLiangBianHao">
+      <soap:operation soapAction="http://tempuri.org/FRM_JianPiaoXiTong/SelectCheLiangByCheLiangBianHao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectCheLiangXiWeiZhangTai">
+      <soap:operation soapAction="http://tempuri.org/FRM_JianPiaoXiTong/SelectCheLiangXiWeiZhangTai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectDaiJianCheLiang">
+      <soap:operation soapAction="http://tempuri.org/FRM_JianPiaoXiTong/SelectDaiJianCheLiang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectJianPiaoXinXi">
+      <soap:operation soapAction="http://tempuri.org/FRM_JianPiaoXiTong/SelectJianPiaoXinXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectBaoBanXinXi">
+      <soap:operation soapAction="http://tempuri.org/FRM_JianPiaoXiTong/SelectBaoBanXinXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSeatsState">
+      <soap:operation soapAction="http://tempuri.org/FRM_JianPiaoXiTong/UpdateSeatsState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectPiaoHaoByCheLiangID">
+      <soap:operation soapAction="http://tempuri.org/FRM_JianPiaoXiTong/SelectPiaoHaoByCheLiangID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FRM_JianPiaoXiTong">
+    <wsdl:port name="BLL集团客运综合管理.InspectTicketManager.FRM_JianPiaoXiTong" binding="tns:BLL集团客运综合管理.InspectTicketManager.FRM_JianPiaoXiTong">
+      <soap:address location="http://localhost:52701/BLL%E9%9B%86%E5%9B%A2%E5%AE%A2%E8%BF%90%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86.InspectTicketManager.FRM_JianPiaoXiTong.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

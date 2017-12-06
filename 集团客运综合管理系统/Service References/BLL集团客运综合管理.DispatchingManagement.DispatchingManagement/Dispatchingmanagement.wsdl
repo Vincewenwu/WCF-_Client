@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Dispatchingmanagement" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.DispatchingManagement.Dispatchingmanagement.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.DispatchingManagement.Dispatchingmanagement.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.DispatchingManagement.Dispatchingmanagement.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Dispatchingmanagement_SelectFrequencyOnVehicleState_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectFrequencyOnVehicleState" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_SelectFrequencyOnVehicleState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectFrequencyOnVehicleStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_SelectBanCheLiangXinXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectBanCheLiangXinXi" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_SelectBanCheLiangXinXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectBanCheLiangXinXiResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_SelectkaibanCheLiangXinXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectkaibanCheLiangXinXi" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_SelectkaibanCheLiangXinXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectkaibanCheLiangXinXiResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_SelectFrequencyXinXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectFrequencyXinXi" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_SelectFrequencyXinXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectFrequencyXinXiResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Selectdaibancheliangxinxi_InputMessage">
+    <wsdl:part name="parameters" element="tns:Selectdaibancheliangxinxi" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Selectdaibancheliangxinxi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectdaibancheliangxinxiResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_UpdateVehicleStateOnFrequency_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateVehicleStateOnFrequency" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_UpdateVehicleStateOnFrequency_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateVehicleStateOnFrequencyResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Updatecheliangitbgban_InputMessage">
+    <wsdl:part name="parameters" element="tns:Updatecheliangitbgban" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Updatecheliangitbgban_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatecheliangitbgbanResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Selectjianpiaokou_InputMessage">
+    <wsdl:part name="parameters" element="tns:Selectjianpiaokou" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Selectjianpiaokou_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectjianpiaokouResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_SelectFrequencyOnjianpiaokou_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectFrequencyOnjianpiaokou" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_SelectFrequencyOnjianpiaokou_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectFrequencyOnjianpiaokouResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_UpdateJIanPiaoKou_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateJIanPiaoKou" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_UpdateJIanPiaoKou_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateJIanPiaoKouResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_SelectCarBeLong_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCarBeLong" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_SelectCarBeLong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCarBeLongResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Selectcbocarbelong_InputMessage">
+    <wsdl:part name="parameters" element="tns:Selectcbocarbelong" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Selectcbocarbelong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectcbocarbelongResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_SelectBanCiOnDioaDuZhan_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectBanCiOnDioaDuZhan" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_SelectBanCiOnDioaDuZhan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectBanCiOnDioaDuZhanResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_SelectCheLiangOnBanCi_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheLiangOnBanCi" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_SelectCheLiangOnBanCi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheLiangOnBanCiResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_SelectdendsTaionOnFrequencyID_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectdendsTaionOnFrequencyID" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_SelectdendsTaionOnFrequencyID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectdendsTaionOnFrequencyIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Selectcheliangzhuangtai_InputMessage">
+    <wsdl:part name="parameters" element="tns:Selectcheliangzhuangtai" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Selectcheliangzhuangtai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectcheliangzhuangtaiResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Selectdiyigezhandian_InputMessage">
+    <wsdl:part name="parameters" element="tns:Selectdiyigezhandian" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Selectdiyigezhandian_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectdiyigezhandianResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Selectzhandianpiaojia_InputMessage">
+    <wsdl:part name="parameters" element="tns:Selectzhandianpiaojia" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Selectzhandianpiaojia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectzhandianpiaojiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Selelctxiweizhaungtai_InputMessage">
+    <wsdl:part name="parameters" element="tns:Selelctxiweizhaungtai" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Selelctxiweizhaungtai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelelctxiweizhaungtaiResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_updatetime_InputMessage">
+    <wsdl:part name="parameters" element="tns:updatetime" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_updatetime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updatetimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Selectpiaojiazuidariqi_InputMessage">
+    <wsdl:part name="parameters" element="tns:Selectpiaojiazuidariqi" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Selectpiaojiazuidariqi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectpiaojiazuidariqiResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Selectzuidapiohaodiaodu_InputMessage">
+    <wsdl:part name="parameters" element="tns:Selectzuidapiohaodiaodu" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Selectzuidapiohaodiaodu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectzuidapiohaodiaoduResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Insectdingpiaoxinxidiaodu_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insectdingpiaoxinxidiaodu" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Insectdingpiaoxinxidiaodu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsectdingpiaoxinxidiaoduResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_selectpiaojialeixing_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectpiaojialeixing" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_selectpiaojialeixing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectpiaojialeixingResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Updatexiweizhaungtaiweibaofeidiaodu_InputMessage">
+    <wsdl:part name="parameters" element="tns:Updatexiweizhaungtaiweibaofeidiaodu" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Updatexiweizhaungtaiweibaofeidiaodu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatexiweizhaungtaiweibaofeidiaoduResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Selectbancixinxitoguangbo_InputMessage">
+    <wsdl:part name="parameters" element="tns:Selectbancixinxitoguangbo" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Selectbancixinxitoguangbo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectbancixinxitoguangboResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Selectchaxundiyigezhandian_InputMessage">
+    <wsdl:part name="parameters" element="tns:Selectchaxundiyigezhandian" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Selectchaxundiyigezhandian_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectchaxundiyigezhandianResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Selectchaxunzuihougezhandian_InputMessage">
+    <wsdl:part name="parameters" element="tns:Selectchaxunzuihougezhandian" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_Selectchaxunzuihougezhandian_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectchaxunzuihougezhandianResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_selectbaobanbanci_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectbaobanbanci" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_selectbaobanbanci_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectbaobanbanciResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_selecttujinzhan_InputMessage">
+    <wsdl:part name="parameters" element="tns:selecttujinzhan" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_selecttujinzhan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selecttujinzhanResponse" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_InsectYanZhnegMa_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsectYanZhnegMa" />
+  </wsdl:message>
+  <wsdl:message name="Dispatchingmanagement_InsectYanZhnegMa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsectYanZhnegMaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Dispatchingmanagement">
+    <wsdl:operation name="SelectFrequencyOnVehicleState">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectFrequencyOnVehicleState" message="tns:Dispatchingmanagement_SelectFrequencyOnVehicleState_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectFrequencyOnVehicleStateResponse" message="tns:Dispatchingmanagement_SelectFrequencyOnVehicleState_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectBanCheLiangXinXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectBanCheLiangXinXi" message="tns:Dispatchingmanagement_SelectBanCheLiangXinXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectBanCheLiangXinXiResponse" message="tns:Dispatchingmanagement_SelectBanCheLiangXinXi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectkaibanCheLiangXinXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectkaibanCheLiangXinXi" message="tns:Dispatchingmanagement_SelectkaibanCheLiangXinXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectkaibanCheLiangXinXiResponse" message="tns:Dispatchingmanagement_SelectkaibanCheLiangXinXi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectFrequencyXinXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectFrequencyXinXi" message="tns:Dispatchingmanagement_SelectFrequencyXinXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectFrequencyXinXiResponse" message="tns:Dispatchingmanagement_SelectFrequencyXinXi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Selectdaibancheliangxinxi">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/Selectdaibancheliangxinxi" message="tns:Dispatchingmanagement_Selectdaibancheliangxinxi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectdaibancheliangxinxiResponse" message="tns:Dispatchingmanagement_Selectdaibancheliangxinxi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVehicleStateOnFrequency">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/UpdateVehicleStateOnFrequency" message="tns:Dispatchingmanagement_UpdateVehicleStateOnFrequency_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/UpdateVehicleStateOnFrequencyResponse" message="tns:Dispatchingmanagement_UpdateVehicleStateOnFrequency_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Updatecheliangitbgban">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/Updatecheliangitbgban" message="tns:Dispatchingmanagement_Updatecheliangitbgban_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/UpdatecheliangitbgbanResponse" message="tns:Dispatchingmanagement_Updatecheliangitbgban_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Selectjianpiaokou">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/Selectjianpiaokou" message="tns:Dispatchingmanagement_Selectjianpiaokou_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectjianpiaokouResponse" message="tns:Dispatchingmanagement_Selectjianpiaokou_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectFrequencyOnjianpiaokou">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectFrequencyOnjianpiaokou" message="tns:Dispatchingmanagement_SelectFrequencyOnjianpiaokou_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectFrequencyOnjianpiaokouResponse" message="tns:Dispatchingmanagement_SelectFrequencyOnjianpiaokou_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateJIanPiaoKou">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/UpdateJIanPiaoKou" message="tns:Dispatchingmanagement_UpdateJIanPiaoKou_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/UpdateJIanPiaoKouResponse" message="tns:Dispatchingmanagement_UpdateJIanPiaoKou_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectCarBeLong">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectCarBeLong" message="tns:Dispatchingmanagement_SelectCarBeLong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectCarBeLongResponse" message="tns:Dispatchingmanagement_SelectCarBeLong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Selectcbocarbelong">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/Selectcbocarbelong" message="tns:Dispatchingmanagement_Selectcbocarbelong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectcbocarbelongResponse" message="tns:Dispatchingmanagement_Selectcbocarbelong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectBanCiOnDioaDuZhan">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectBanCiOnDioaDuZhan" message="tns:Dispatchingmanagement_SelectBanCiOnDioaDuZhan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectBanCiOnDioaDuZhanResponse" message="tns:Dispatchingmanagement_SelectBanCiOnDioaDuZhan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectCheLiangOnBanCi">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectCheLiangOnBanCi" message="tns:Dispatchingmanagement_SelectCheLiangOnBanCi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectCheLiangOnBanCiResponse" message="tns:Dispatchingmanagement_SelectCheLiangOnBanCi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectdendsTaionOnFrequencyID">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectdendsTaionOnFrequencyID" message="tns:Dispatchingmanagement_SelectdendsTaionOnFrequencyID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectdendsTaionOnFrequencyIDResponse" message="tns:Dispatchingmanagement_SelectdendsTaionOnFrequencyID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Selectcheliangzhuangtai">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/Selectcheliangzhuangtai" message="tns:Dispatchingmanagement_Selectcheliangzhuangtai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectcheliangzhuangtaiResponse" message="tns:Dispatchingmanagement_Selectcheliangzhuangtai_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Selectdiyigezhandian">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/Selectdiyigezhandian" message="tns:Dispatchingmanagement_Selectdiyigezhandian_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectdiyigezhandianResponse" message="tns:Dispatchingmanagement_Selectdiyigezhandian_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Selectzhandianpiaojia">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/Selectzhandianpiaojia" message="tns:Dispatchingmanagement_Selectzhandianpiaojia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectzhandianpiaojiaResponse" message="tns:Dispatchingmanagement_Selectzhandianpiaojia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Selelctxiweizhaungtai">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/Selelctxiweizhaungtai" message="tns:Dispatchingmanagement_Selelctxiweizhaungtai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelelctxiweizhaungtaiResponse" message="tns:Dispatchingmanagement_Selelctxiweizhaungtai_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updatetime">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/updatetime" message="tns:Dispatchingmanagement_updatetime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/updatetimeResponse" message="tns:Dispatchingmanagement_updatetime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Selectpiaojiazuidariqi">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/Selectpiaojiazuidariqi" message="tns:Dispatchingmanagement_Selectpiaojiazuidariqi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectpiaojiazuidariqiResponse" message="tns:Dispatchingmanagement_Selectpiaojiazuidariqi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Selectzuidapiohaodiaodu">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/Selectzuidapiohaodiaodu" message="tns:Dispatchingmanagement_Selectzuidapiohaodiaodu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectzuidapiohaodiaoduResponse" message="tns:Dispatchingmanagement_Selectzuidapiohaodiaodu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insectdingpiaoxinxidiaodu">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/Insectdingpiaoxinxidiaodu" message="tns:Dispatchingmanagement_Insectdingpiaoxinxidiaodu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/InsectdingpiaoxinxidiaoduResponse" message="tns:Dispatchingmanagement_Insectdingpiaoxinxidiaodu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectpiaojialeixing">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/selectpiaojialeixing" message="tns:Dispatchingmanagement_selectpiaojialeixing_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/selectpiaojialeixingResponse" message="tns:Dispatchingmanagement_selectpiaojialeixing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Updatexiweizhaungtaiweibaofeidiaodu">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/Updatexiweizhaungtaiweibaofeidiaodu" message="tns:Dispatchingmanagement_Updatexiweizhaungtaiweibaofeidiaodu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/UpdatexiweizhaungtaiweibaofeidiaoduResponse" message="tns:Dispatchingmanagement_Updatexiweizhaungtaiweibaofeidiaodu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Selectbancixinxitoguangbo">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/Selectbancixinxitoguangbo" message="tns:Dispatchingmanagement_Selectbancixinxitoguangbo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectbancixinxitoguangboResponse" message="tns:Dispatchingmanagement_Selectbancixinxitoguangbo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Selectchaxundiyigezhandian">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/Selectchaxundiyigezhandian" message="tns:Dispatchingmanagement_Selectchaxundiyigezhandian_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectchaxundiyigezhandianResponse" message="tns:Dispatchingmanagement_Selectchaxundiyigezhandian_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Selectchaxunzuihougezhandian">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/Selectchaxunzuihougezhandian" message="tns:Dispatchingmanagement_Selectchaxunzuihougezhandian_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/SelectchaxunzuihougezhandianResponse" message="tns:Dispatchingmanagement_Selectchaxunzuihougezhandian_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectbaobanbanci">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/selectbaobanbanci" message="tns:Dispatchingmanagement_selectbaobanbanci_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/selectbaobanbanciResponse" message="tns:Dispatchingmanagement_selectbaobanbanci_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selecttujinzhan">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/selecttujinzhan" message="tns:Dispatchingmanagement_selecttujinzhan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/selecttujinzhanResponse" message="tns:Dispatchingmanagement_selecttujinzhan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsectYanZhnegMa">
+      <wsdl:input wsaw:Action="http://tempuri.org/Dispatchingmanagement/InsectYanZhnegMa" message="tns:Dispatchingmanagement_InsectYanZhnegMa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Dispatchingmanagement/InsectYanZhnegMaResponse" message="tns:Dispatchingmanagement_InsectYanZhnegMa_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL集团客运综合管理.DispatchingManagement.Dispatchingmanagement" type="tns:Dispatchingmanagement">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SelectFrequencyOnVehicleState">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/SelectFrequencyOnVehicleState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectBanCheLiangXinXi">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/SelectBanCheLiangXinXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectkaibanCheLiangXinXi">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/SelectkaibanCheLiangXinXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectFrequencyXinXi">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/SelectFrequencyXinXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Selectdaibancheliangxinxi">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/Selectdaibancheliangxinxi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVehicleStateOnFrequency">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/UpdateVehicleStateOnFrequency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Updatecheliangitbgban">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/Updatecheliangitbgban" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Selectjianpiaokou">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/Selectjianpiaokou" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectFrequencyOnjianpiaokou">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/SelectFrequencyOnjianpiaokou" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateJIanPiaoKou">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/UpdateJIanPiaoKou" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectCarBeLong">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/SelectCarBeLong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Selectcbocarbelong">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/Selectcbocarbelong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectBanCiOnDioaDuZhan">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/SelectBanCiOnDioaDuZhan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectCheLiangOnBanCi">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/SelectCheLiangOnBanCi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectdendsTaionOnFrequencyID">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/SelectdendsTaionOnFrequencyID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Selectcheliangzhuangtai">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/Selectcheliangzhuangtai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Selectdiyigezhandian">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/Selectdiyigezhandian" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Selectzhandianpiaojia">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/Selectzhandianpiaojia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Selelctxiweizhaungtai">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/Selelctxiweizhaungtai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatetime">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/updatetime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Selectpiaojiazuidariqi">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/Selectpiaojiazuidariqi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Selectzuidapiohaodiaodu">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/Selectzuidapiohaodiaodu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insectdingpiaoxinxidiaodu">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/Insectdingpiaoxinxidiaodu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectpiaojialeixing">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/selectpiaojialeixing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Updatexiweizhaungtaiweibaofeidiaodu">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/Updatexiweizhaungtaiweibaofeidiaodu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Selectbancixinxitoguangbo">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/Selectbancixinxitoguangbo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Selectchaxundiyigezhandian">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/Selectchaxundiyigezhandian" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Selectchaxunzuihougezhandian">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/Selectchaxunzuihougezhandian" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectbaobanbanci">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/selectbaobanbanci" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selecttujinzhan">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/selecttujinzhan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsectYanZhnegMa">
+      <soap:operation soapAction="http://tempuri.org/Dispatchingmanagement/InsectYanZhnegMa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Dispatchingmanagement">
+    <wsdl:port name="BLL集团客运综合管理.DispatchingManagement.Dispatchingmanagement" binding="tns:BLL集团客运综合管理.DispatchingManagement.Dispatchingmanagement">
+      <soap:address location="http://localhost:52701/BLL%E9%9B%86%E5%9B%A2%E5%AE%A2%E8%BF%90%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86.DispatchingManagement.Dispatchingmanagement.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

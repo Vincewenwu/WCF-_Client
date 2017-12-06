@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="NEWFrequencyUpdate" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="NEWFrequencyUpdate_FrequencyUPDATE_InputMessage">
+    <wsdl:part name="parameters" element="tns:FrequencyUPDATE" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyUpdate_FrequencyUPDATE_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FrequencyUPDATEResponse" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyUpdate_SelectFrequency_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectFrequency" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyUpdate_SelectFrequency_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectFrequencyResponse" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyUpdate_SelectFrequencyTIAO_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectFrequencyTIAO" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyUpdate_SelectFrequencyTIAO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectFrequencyTIAOResponse" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyUpdate_LineSelect_InputMessage">
+    <wsdl:part name="parameters" element="tns:LineSelect" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyUpdate_LineSelect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LineSelectResponse" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyUpdate_TicketEntranceSelect_InputMessage">
+    <wsdl:part name="parameters" element="tns:TicketEntranceSelect" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyUpdate_TicketEntranceSelect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TicketEntranceSelectResponse" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyUpdate_VehicleSelect_InputMessage">
+    <wsdl:part name="parameters" element="tns:VehicleSelect" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyUpdate_VehicleSelect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VehicleSelectResponse" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyUpdate_StationSelect1_InputMessage">
+    <wsdl:part name="parameters" element="tns:StationSelect1" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyUpdate_StationSelect1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StationSelect1Response" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyUpdate_StationSelectTIAO_InputMessage">
+    <wsdl:part name="parameters" element="tns:StationSelectTIAO" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyUpdate_StationSelectTIAO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StationSelectTIAOResponse" />
+  </wsdl:message>
+  <wsdl:portType name="NEWFrequencyUpdate">
+    <wsdl:operation name="FrequencyUPDATE">
+      <wsdl:input wsaw:Action="http://tempuri.org/NEWFrequencyUpdate/FrequencyUPDATE" message="tns:NEWFrequencyUpdate_FrequencyUPDATE_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/NEWFrequencyUpdate/FrequencyUPDATEResponse" message="tns:NEWFrequencyUpdate_FrequencyUPDATE_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectFrequency">
+      <wsdl:input wsaw:Action="http://tempuri.org/NEWFrequencyUpdate/SelectFrequency" message="tns:NEWFrequencyUpdate_SelectFrequency_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/NEWFrequencyUpdate/SelectFrequencyResponse" message="tns:NEWFrequencyUpdate_SelectFrequency_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectFrequencyTIAO">
+      <wsdl:input wsaw:Action="http://tempuri.org/NEWFrequencyUpdate/SelectFrequencyTIAO" message="tns:NEWFrequencyUpdate_SelectFrequencyTIAO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/NEWFrequencyUpdate/SelectFrequencyTIAOResponse" message="tns:NEWFrequencyUpdate_SelectFrequencyTIAO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LineSelect">
+      <wsdl:input wsaw:Action="http://tempuri.org/NEWFrequencyUpdate/LineSelect" message="tns:NEWFrequencyUpdate_LineSelect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/NEWFrequencyUpdate/LineSelectResponse" message="tns:NEWFrequencyUpdate_LineSelect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TicketEntranceSelect">
+      <wsdl:input wsaw:Action="http://tempuri.org/NEWFrequencyUpdate/TicketEntranceSelect" message="tns:NEWFrequencyUpdate_TicketEntranceSelect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/NEWFrequencyUpdate/TicketEntranceSelectResponse" message="tns:NEWFrequencyUpdate_TicketEntranceSelect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VehicleSelect">
+      <wsdl:input wsaw:Action="http://tempuri.org/NEWFrequencyUpdate/VehicleSelect" message="tns:NEWFrequencyUpdate_VehicleSelect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/NEWFrequencyUpdate/VehicleSelectResponse" message="tns:NEWFrequencyUpdate_VehicleSelect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StationSelect1">
+      <wsdl:input wsaw:Action="http://tempuri.org/NEWFrequencyUpdate/StationSelect1" message="tns:NEWFrequencyUpdate_StationSelect1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/NEWFrequencyUpdate/StationSelect1Response" message="tns:NEWFrequencyUpdate_StationSelect1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StationSelectTIAO">
+      <wsdl:input wsaw:Action="http://tempuri.org/NEWFrequencyUpdate/StationSelectTIAO" message="tns:NEWFrequencyUpdate_StationSelectTIAO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/NEWFrequencyUpdate/StationSelectTIAOResponse" message="tns:NEWFrequencyUpdate_StationSelectTIAO_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate" type="tns:NEWFrequencyUpdate">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="FrequencyUPDATE">
+      <soap:operation soapAction="http://tempuri.org/NEWFrequencyUpdate/FrequencyUPDATE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectFrequency">
+      <soap:operation soapAction="http://tempuri.org/NEWFrequencyUpdate/SelectFrequency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectFrequencyTIAO">
+      <soap:operation soapAction="http://tempuri.org/NEWFrequencyUpdate/SelectFrequencyTIAO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LineSelect">
+      <soap:operation soapAction="http://tempuri.org/NEWFrequencyUpdate/LineSelect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TicketEntranceSelect">
+      <soap:operation soapAction="http://tempuri.org/NEWFrequencyUpdate/TicketEntranceSelect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VehicleSelect">
+      <soap:operation soapAction="http://tempuri.org/NEWFrequencyUpdate/VehicleSelect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StationSelect1">
+      <soap:operation soapAction="http://tempuri.org/NEWFrequencyUpdate/StationSelect1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StationSelectTIAO">
+      <soap:operation soapAction="http://tempuri.org/NEWFrequencyUpdate/StationSelectTIAO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="NEWFrequencyUpdate">
+    <wsdl:port name="BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate" binding="tns:BLL集团客运综合管理.FrequencyManager.NEWFrequencyUpdate">
+      <soap:address location="http://localhost:52701/BLL%E9%9B%86%E5%9B%A2%E5%AE%A2%E8%BF%90%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86.FrequencyManager.NEWFrequencyUpdate.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

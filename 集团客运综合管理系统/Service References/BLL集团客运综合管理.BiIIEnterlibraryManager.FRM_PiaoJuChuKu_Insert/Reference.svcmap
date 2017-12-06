@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="989e18fd-048e-47d1-a224-cfd7dc754ae0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52701/BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Insert.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BLL集团客运综合管理.xsd" MetadataType="Schema" ID="ed30a735-b843-40ac-bfd6-5d91a4875ddf" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Insert.svc?xsd=xsd1" />
+    <MetadataFile FileName="FRM_PiaoJuChuKu_Insert.wsdl" MetadataType="Wsdl" ID="6ca96bd1-ac88-4968-938d-9a3a30fa14e7" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Insert.svc?wsdl" />
+    <MetadataFile FileName="BLL集团客运综合管理1.xsd" MetadataType="Schema" ID="ddd17487-7289-4969-a686-2995eec3df5c" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Insert.svc?xsd=xsd0" />
+    <MetadataFile FileName="BLL集团客运综合管理.disco" MetadataType="Disco" ID="40b34540-2b64-45fd-b33a-6980f66f3c63" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Insert.svc?disco" />
+    <MetadataFile FileName="BLL集团客运综合管理2.xsd" MetadataType="Schema" ID="a36ee4ae-dad7-472a-a4b8-d31b95747e23" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.BiIIEnterlibraryManager.FRM_PiaoJuChuKu_Insert.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

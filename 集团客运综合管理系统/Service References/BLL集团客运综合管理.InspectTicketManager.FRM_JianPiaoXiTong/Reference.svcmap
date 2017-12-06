@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cf375e64-0845-4c0b-a1b8-2232bf048577" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52701/BLL集团客运综合管理.InspectTicketManager.FRM_JianPiaoXiTong.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BLL集团客运综合管理.disco" MetadataType="Disco" ID="b2e24c1d-08d4-4235-8935-9d3f5103c39e" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.InspectTicketManager.FRM_JianPiaoXiTong.svc?disco" />
+    <MetadataFile FileName="BLL集团客运综合管理.xsd" MetadataType="Schema" ID="2283696a-01a4-4664-996b-f5b4f00248d3" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.InspectTicketManager.FRM_JianPiaoXiTong.svc?xsd=xsd2" />
+    <MetadataFile FileName="FRM_JianPiaoXiTong.wsdl" MetadataType="Wsdl" ID="d57863b5-088c-449c-9fdc-d5a07aaf6dcd" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.InspectTicketManager.FRM_JianPiaoXiTong.svc?wsdl" />
+    <MetadataFile FileName="BLL集团客运综合管理1.xsd" MetadataType="Schema" ID="cf4eeb29-c892-4606-8e74-3b73458358fa" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.InspectTicketManager.FRM_JianPiaoXiTong.svc?xsd=xsd1" />
+    <MetadataFile FileName="BLL集团客运综合管理2.xsd" MetadataType="Schema" ID="84d45071-4518-4807-b967-9f109aa3fe50" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.InspectTicketManager.FRM_JianPiaoXiTong.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

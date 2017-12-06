@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="78c6ea87-c7a9-43c8-9fd0-c8d87e9fcbbd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52701/BLL集团客运综合管理.进站检查.Jinzhanjiancha.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BLL集团客运综合管理.xsd" MetadataType="Schema" ID="ed791d4a-700a-4912-b4b2-331903bde55f" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.进站检查.Jinzhanjiancha.svc?xsd=xsd0" />
+    <MetadataFile FileName="BLL集团客运综合管理.disco" MetadataType="Disco" ID="2e43730b-0d2d-48f9-a47c-cbea64fdaf9a" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.进站检查.Jinzhanjiancha.svc?disco" />
+    <MetadataFile FileName="BLL集团客运综合管理1.xsd" MetadataType="Schema" ID="71f2a807-8d8d-46c8-8eaa-04e134db7743" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.进站检查.Jinzhanjiancha.svc?xsd=xsd1" />
+    <MetadataFile FileName="BLL集团客运综合管理2.xsd" MetadataType="Schema" ID="798affbc-a5b8-417a-8860-e5ac28ac4317" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.进站检查.Jinzhanjiancha.svc?xsd=xsd2" />
+    <MetadataFile FileName="Jinzhanjiancha.wsdl" MetadataType="Wsdl" ID="e3795449-23ab-4fa0-a52f-414acf8f0d2c" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.进站检查.Jinzhanjiancha.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

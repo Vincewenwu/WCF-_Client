@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="集团客运管理系统DataSet" targetNamespace="http://tempuri.org/集团客运管理系统DataSet.xsd" xmlns:mstns="http://tempuri.org/集团客运管理系统DataSet.xsd" xmlns="http://tempuri.org/集团客运管理系统DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=DESKTOP-2G41G0O;Initial Catalog=集团客运管理系统;User ID=sa;Password=123" IsAppSettingsProperty="false" Modifier="Assembly" Name="desktop-2g41g0o.集团客运管理系统.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="出站稽查明细TableAdapter" GeneratorDataComponentClassName="出站稽查明细TableAdapter" Name="出站稽查明细" UserDataComponentName="出站稽查明细TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="desktop-2g41g0o.集团客运管理系统.dbo" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT   UserList.UserMC, TheStationInspectionList.TheNumberOfPassengers, TheStationInspectionList.ChildrenFree, 
+                TheStationInspectionList.ComprehensiveResults, TheStationInspectionList.AllPass, VehicleTypeList.VehicleTypeMC, 
+                VehicleList.PlateNumber, TheStationInspectionList.TheStationInspectionID
+FROM      TheStationInspectionList INNER JOIN
+                UserList ON TheStationInspectionList.UserID = UserList.UserID INNER JOIN
+                VehicleList ON TheStationInspectionList.VehicleID = VehicleList.VehicleID INNER JOIN
+                VehicleTypeList ON VehicleList.VehicleTypeID = VehicleTypeList.VehicleTypeID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="UserMC" DataSetColumn="UserMC" />
+              <Mapping SourceColumn="TheNumberOfPassengers" DataSetColumn="TheNumberOfPassengers" />
+              <Mapping SourceColumn="ChildrenFree" DataSetColumn="ChildrenFree" />
+              <Mapping SourceColumn="ComprehensiveResults" DataSetColumn="ComprehensiveResults" />
+              <Mapping SourceColumn="AllPass" DataSetColumn="AllPass" />
+              <Mapping SourceColumn="VehicleTypeMC" DataSetColumn="VehicleTypeMC" />
+              <Mapping SourceColumn="PlateNumber" DataSetColumn="PlateNumber" />
+              <Mapping SourceColumn="TheStationInspectionID" DataSetColumn="TheStationInspectionID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="出站稽查项目TableAdapter" GeneratorDataComponentClassName="出站稽查项目TableAdapter" Name="出站稽查项目" UserDataComponentName="出站稽查项目TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="desktop-2g41g0o.集团客运管理系统.dbo" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT   AuditByComparisonNaneList.Cheakxianmu, AuditByComparisonNaneList.AuditByComparisonNane, 
+                AuditByComparisonList.YON, AuditByComparisonList.TheStationInspectionID
+FROM      AuditByComparisonList INNER JOIN
+                AuditByComparisonNaneList ON 
+                AuditByComparisonList.AuditByComparisonNaneID = AuditByComparisonNaneList.AuditByComparisoNaneID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Cheakxianmu" DataSetColumn="Cheakxianmu" />
+              <Mapping SourceColumn="AuditByComparisonNane" DataSetColumn="AuditByComparisonNane" />
+              <Mapping SourceColumn="YON" DataSetColumn="YON" />
+              <Mapping SourceColumn="TheStationInspectionID" DataSetColumn="TheStationInspectionID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="集团客运管理系统DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="集团客运管理系统DataSet" msprop:Generator_UserDSName="集团客运管理系统DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="发班日期" msprop:Generator_ColumnVarNameInTable="column发班日期" msprop:Generator_ColumnPropNameInRow="发班日期" msprop:Generator_ColumnPropNameInTable="发班日期Column" msprop:Generator_UserColumnName="发班日期" type="xs:string" minOccurs="0" />
+              <xs:element name="班次名称" msprop:Generator_ColumnVarNameInTable="column班次名称" msprop:Generator_ColumnPropNameInRow="班次名称" msprop:Generator_ColumnPropNameInTable="班次名称Column" msprop:Generator_UserColumnName="班次名称" type="xs:string" minOccurs="0" />
+              <xs:element name="线路名称" msprop:Generator_ColumnVarNameInTable="column线路名称" msprop:Generator_ColumnPropNameInRow="线路名称" msprop:Generator_ColumnPropNameInTable="线路名称Column" msprop:Generator_UserColumnName="线路名称" type="xs:string" minOccurs="0" />
+              <xs:element name="车牌号" msprop:Generator_ColumnVarNameInTable="column车牌号" msprop:Generator_ColumnPropNameInRow="车牌号" msprop:Generator_ColumnPropNameInTable="车牌号Column" msprop:Generator_UserColumnName="车牌号" type="xs:string" minOccurs="0" />
+              <xs:element name="发车时间" msprop:Generator_ColumnVarNameInTable="column发车时间" msprop:Generator_ColumnPropNameInRow="发车时间" msprop:Generator_ColumnPropNameInTable="发车时间Column" msprop:Generator_UserColumnName="发车时间" type="xs:string" minOccurs="0" />
+              <xs:element name="终点站" msprop:Generator_ColumnVarNameInTable="column终点站" msprop:Generator_ColumnPropNameInRow="终点站" msprop:Generator_ColumnPropNameInTable="终点站Column" msprop:Generator_UserColumnName="终点站" type="xs:string" minOccurs="0" />
+              <xs:element name="班次状态" msprop:Generator_ColumnVarNameInTable="column班次状态" msprop:Generator_ColumnPropNameInRow="班次状态" msprop:Generator_ColumnPropNameInTable="班次状态Column" msprop:Generator_UserColumnName="班次状态" type="xs:string" minOccurs="0" />
+              <xs:element name="检票口" msprop:Generator_ColumnVarNameInTable="column检票口" msprop:Generator_ColumnPropNameInRow="检票口" msprop:Generator_ColumnPropNameInTable="检票口Column" msprop:Generator_UserColumnName="检票口" type="xs:string" minOccurs="0" />
+              <xs:element name="座位数" msprop:Generator_ColumnVarNameInTable="column座位数" msprop:Generator_ColumnPropNameInRow="座位数" msprop:Generator_ColumnPropNameInTable="座位数Column" msprop:Generator_UserColumnName="座位数" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="出站稽查明细" msprop:Generator_TableClassName="出站稽查明细DataTable" msprop:Generator_TableVarName="table出站稽查明细" msprop:Generator_TablePropName="出站稽查明细" msprop:Generator_RowDeletingName="出站稽查明细RowDeleting" msprop:Generator_RowChangingName="出站稽查明细RowChanging" msprop:Generator_RowEvHandlerName="出站稽查明细RowChangeEventHandler" msprop:Generator_RowDeletedName="出站稽查明细RowDeleted" msprop:Generator_UserTableName="出站稽查明细" msprop:Generator_RowChangedName="出站稽查明细RowChanged" msprop:Generator_RowEvArgName="出站稽查明细RowChangeEvent" msprop:Generator_RowClassName="出站稽查明细Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UserMC" msprop:Generator_ColumnVarNameInTable="columnUserMC" msprop:Generator_ColumnPropNameInRow="UserMC" msprop:Generator_ColumnPropNameInTable="UserMCColumn" msprop:Generator_UserColumnName="UserMC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TheNumberOfPassengers" msprop:Generator_ColumnVarNameInTable="columnTheNumberOfPassengers" msprop:Generator_ColumnPropNameInRow="TheNumberOfPassengers" msprop:Generator_ColumnPropNameInTable="TheNumberOfPassengersColumn" msprop:Generator_UserColumnName="TheNumberOfPassengers" type="xs:int" minOccurs="0" />
+              <xs:element name="ChildrenFree" msprop:Generator_ColumnVarNameInTable="columnChildrenFree" msprop:Generator_ColumnPropNameInRow="ChildrenFree" msprop:Generator_ColumnPropNameInTable="ChildrenFreeColumn" msprop:Generator_UserColumnName="ChildrenFree" type="xs:int" minOccurs="0" />
+              <xs:element name="ComprehensiveResults" msprop:Generator_ColumnVarNameInTable="columnComprehensiveResults" msprop:Generator_ColumnPropNameInRow="ComprehensiveResults" msprop:Generator_ColumnPropNameInTable="ComprehensiveResultsColumn" msprop:Generator_UserColumnName="ComprehensiveResults" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AllPass" msprop:Generator_ColumnVarNameInTable="columnAllPass" msprop:Generator_ColumnPropNameInRow="AllPass" msprop:Generator_ColumnPropNameInTable="AllPassColumn" msprop:Generator_UserColumnName="AllPass" type="xs:boolean" minOccurs="0" />
+              <xs:element name="VehicleTypeMC" msprop:Generator_ColumnVarNameInTable="columnVehicleTypeMC" msprop:Generator_ColumnPropNameInRow="VehicleTypeMC" msprop:Generator_ColumnPropNameInTable="VehicleTypeMCColumn" msprop:Generator_UserColumnName="VehicleTypeMC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PlateNumber" msprop:Generator_ColumnVarNameInTable="columnPlateNumber" msprop:Generator_ColumnPropNameInRow="PlateNumber" msprop:Generator_ColumnPropNameInTable="PlateNumberColumn" msprop:Generator_UserColumnName="PlateNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TheStationInspectionID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnTheStationInspectionID" msprop:Generator_ColumnPropNameInRow="TheStationInspectionID" msprop:Generator_ColumnPropNameInTable="TheStationInspectionIDColumn" msprop:Generator_UserColumnName="TheStationInspectionID" type="xs:int" />
+              <xs:element name="CarBelongToTheUnitMC" msprop:Generator_ColumnVarNameInTable="columnCarBelongToTheUnitMC" msprop:Generator_ColumnPropNameInRow="CarBelongToTheUnitMC" msprop:Generator_ColumnPropNameInTable="CarBelongToTheUnitMCColumn" msprop:Generator_UserColumnName="CarBelongToTheUnitMC" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="出站稽查项目" msprop:Generator_TableClassName="出站稽查项目DataTable" msprop:Generator_TableVarName="table出站稽查项目" msprop:Generator_TablePropName="出站稽查项目" msprop:Generator_RowDeletingName="出站稽查项目RowDeleting" msprop:Generator_RowChangingName="出站稽查项目RowChanging" msprop:Generator_RowEvHandlerName="出站稽查项目RowChangeEventHandler" msprop:Generator_RowDeletedName="出站稽查项目RowDeleted" msprop:Generator_UserTableName="出站稽查项目" msprop:Generator_RowChangedName="出站稽查项目RowChanged" msprop:Generator_RowEvArgName="出站稽查项目RowChangeEvent" msprop:Generator_RowClassName="出站稽查项目Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cheakxianmu" msprop:Generator_ColumnVarNameInTable="columnCheakxianmu" msprop:Generator_ColumnPropNameInRow="Cheakxianmu" msprop:Generator_ColumnPropNameInTable="CheakxianmuColumn" msprop:Generator_UserColumnName="Cheakxianmu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AuditByComparisonNane" msprop:Generator_ColumnVarNameInTable="columnAuditByComparisonNane" msprop:Generator_ColumnPropNameInRow="AuditByComparisonNane" msprop:Generator_ColumnPropNameInTable="AuditByComparisonNaneColumn" msprop:Generator_UserColumnName="AuditByComparisonNane" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="YON" msprop:Generator_ColumnVarNameInTable="columnYON" msprop:Generator_ColumnPropNameInRow="YON" msprop:Generator_ColumnPropNameInTable="YONColumn" msprop:Generator_UserColumnName="YON" type="xs:boolean" minOccurs="0" />
+              <xs:element name="TheStationInspectionID" msprop:Generator_ColumnVarNameInTable="columnTheStationInspectionID" msprop:Generator_ColumnPropNameInRow="TheStationInspectionID" msprop:Generator_ColumnPropNameInTable="TheStationInspectionIDColumn" msprop:Generator_UserColumnName="TheStationInspectionID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:出站稽查明细" />
+      <xs:field xpath="mstns:TheStationInspectionID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

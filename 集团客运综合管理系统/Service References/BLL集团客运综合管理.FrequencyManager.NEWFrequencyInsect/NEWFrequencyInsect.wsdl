@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="NEWFrequencyInsect" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="NEWFrequencyInsect_FrequencyInsect_InputMessage">
+    <wsdl:part name="parameters" element="tns:FrequencyInsect" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyInsect_FrequencyInsect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FrequencyInsectResponse" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyInsect_UpdateVehicleState_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateVehicleState" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyInsect_UpdateVehicleState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateVehicleStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyInsect_LineLInsect_InputMessage">
+    <wsdl:part name="parameters" element="tns:LineLInsect" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyInsect_LineLInsect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LineLInsectResponse" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyInsect_StationInsect_InputMessage">
+    <wsdl:part name="parameters" element="tns:StationInsect" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyInsect_StationInsect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StationInsectResponse" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyInsect_InsectDriverForm_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsectDriverForm" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyInsect_InsectDriverForm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsectDriverFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyInsect_LineSelect_InputMessage">
+    <wsdl:part name="parameters" element="tns:LineSelect" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyInsect_LineSelect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LineSelectResponse" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyInsect_StationSelect_InputMessage">
+    <wsdl:part name="parameters" element="tns:StationSelect" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyInsect_StationSelect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StationSelectResponse" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyInsect_TicketEntranceSelect_InputMessage">
+    <wsdl:part name="parameters" element="tns:TicketEntranceSelect" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyInsect_TicketEntranceSelect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TicketEntranceSelectResponse" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyInsect_VehicleSelect_InputMessage">
+    <wsdl:part name="parameters" element="tns:VehicleSelect" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyInsect_VehicleSelect_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VehicleSelectResponse" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyInsect_StationSelectOn_InputMessage">
+    <wsdl:part name="parameters" element="tns:StationSelectOn" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyInsect_StationSelectOn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StationSelectOnResponse" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyInsect_LineSelectOn_InputMessage">
+    <wsdl:part name="parameters" element="tns:LineSelectOn" />
+  </wsdl:message>
+  <wsdl:message name="NEWFrequencyInsect_LineSelectOn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LineSelectOnResponse" />
+  </wsdl:message>
+  <wsdl:portType name="NEWFrequencyInsect">
+    <wsdl:operation name="FrequencyInsect">
+      <wsdl:input wsaw:Action="http://tempuri.org/NEWFrequencyInsect/FrequencyInsect" message="tns:NEWFrequencyInsect_FrequencyInsect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/NEWFrequencyInsect/FrequencyInsectResponse" message="tns:NEWFrequencyInsect_FrequencyInsect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVehicleState">
+      <wsdl:input wsaw:Action="http://tempuri.org/NEWFrequencyInsect/UpdateVehicleState" message="tns:NEWFrequencyInsect_UpdateVehicleState_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/NEWFrequencyInsect/UpdateVehicleStateResponse" message="tns:NEWFrequencyInsect_UpdateVehicleState_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LineLInsect">
+      <wsdl:input wsaw:Action="http://tempuri.org/NEWFrequencyInsect/LineLInsect" message="tns:NEWFrequencyInsect_LineLInsect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/NEWFrequencyInsect/LineLInsectResponse" message="tns:NEWFrequencyInsect_LineLInsect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StationInsect">
+      <wsdl:input wsaw:Action="http://tempuri.org/NEWFrequencyInsect/StationInsect" message="tns:NEWFrequencyInsect_StationInsect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/NEWFrequencyInsect/StationInsectResponse" message="tns:NEWFrequencyInsect_StationInsect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsectDriverForm">
+      <wsdl:input wsaw:Action="http://tempuri.org/NEWFrequencyInsect/InsectDriverForm" message="tns:NEWFrequencyInsect_InsectDriverForm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/NEWFrequencyInsect/InsectDriverFormResponse" message="tns:NEWFrequencyInsect_InsectDriverForm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LineSelect">
+      <wsdl:input wsaw:Action="http://tempuri.org/NEWFrequencyInsect/LineSelect" message="tns:NEWFrequencyInsect_LineSelect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/NEWFrequencyInsect/LineSelectResponse" message="tns:NEWFrequencyInsect_LineSelect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StationSelect">
+      <wsdl:input wsaw:Action="http://tempuri.org/NEWFrequencyInsect/StationSelect" message="tns:NEWFrequencyInsect_StationSelect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/NEWFrequencyInsect/StationSelectResponse" message="tns:NEWFrequencyInsect_StationSelect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TicketEntranceSelect">
+      <wsdl:input wsaw:Action="http://tempuri.org/NEWFrequencyInsect/TicketEntranceSelect" message="tns:NEWFrequencyInsect_TicketEntranceSelect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/NEWFrequencyInsect/TicketEntranceSelectResponse" message="tns:NEWFrequencyInsect_TicketEntranceSelect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VehicleSelect">
+      <wsdl:input wsaw:Action="http://tempuri.org/NEWFrequencyInsect/VehicleSelect" message="tns:NEWFrequencyInsect_VehicleSelect_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/NEWFrequencyInsect/VehicleSelectResponse" message="tns:NEWFrequencyInsect_VehicleSelect_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StationSelectOn">
+      <wsdl:input wsaw:Action="http://tempuri.org/NEWFrequencyInsect/StationSelectOn" message="tns:NEWFrequencyInsect_StationSelectOn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/NEWFrequencyInsect/StationSelectOnResponse" message="tns:NEWFrequencyInsect_StationSelectOn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LineSelectOn">
+      <wsdl:input wsaw:Action="http://tempuri.org/NEWFrequencyInsect/LineSelectOn" message="tns:NEWFrequencyInsect_LineSelectOn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/NEWFrequencyInsect/LineSelectOnResponse" message="tns:NEWFrequencyInsect_LineSelectOn_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect" type="tns:NEWFrequencyInsect">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="FrequencyInsect">
+      <soap:operation soapAction="http://tempuri.org/NEWFrequencyInsect/FrequencyInsect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVehicleState">
+      <soap:operation soapAction="http://tempuri.org/NEWFrequencyInsect/UpdateVehicleState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LineLInsect">
+      <soap:operation soapAction="http://tempuri.org/NEWFrequencyInsect/LineLInsect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StationInsect">
+      <soap:operation soapAction="http://tempuri.org/NEWFrequencyInsect/StationInsect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsectDriverForm">
+      <soap:operation soapAction="http://tempuri.org/NEWFrequencyInsect/InsectDriverForm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LineSelect">
+      <soap:operation soapAction="http://tempuri.org/NEWFrequencyInsect/LineSelect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StationSelect">
+      <soap:operation soapAction="http://tempuri.org/NEWFrequencyInsect/StationSelect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TicketEntranceSelect">
+      <soap:operation soapAction="http://tempuri.org/NEWFrequencyInsect/TicketEntranceSelect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VehicleSelect">
+      <soap:operation soapAction="http://tempuri.org/NEWFrequencyInsect/VehicleSelect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StationSelectOn">
+      <soap:operation soapAction="http://tempuri.org/NEWFrequencyInsect/StationSelectOn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LineSelectOn">
+      <soap:operation soapAction="http://tempuri.org/NEWFrequencyInsect/LineSelectOn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="NEWFrequencyInsect">
+    <wsdl:port name="BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect" binding="tns:BLL集团客运综合管理.FrequencyManager.NEWFrequencyInsect">
+      <soap:address location="http://localhost:52701/BLL%E9%9B%86%E5%9B%A2%E5%AE%A2%E8%BF%90%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86.FrequencyManager.NEWFrequencyInsect.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

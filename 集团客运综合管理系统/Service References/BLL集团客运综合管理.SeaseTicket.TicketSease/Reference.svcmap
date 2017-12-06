@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="07361bd6-cc78-4457-963f-3b8c5ec69fd2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52701/BLL集团客运综合管理.SeaseTicket.TicketSease.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TicketSease.wsdl" MetadataType="Wsdl" ID="7c05bd47-ed37-4796-9bf6-f9dfd864e329" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.SeaseTicket.TicketSease.svc?wsdl" />
+    <MetadataFile FileName="BLL集团客运综合管理.disco" MetadataType="Disco" ID="6365c19d-d2e7-4f90-8788-762ea10d1be3" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.SeaseTicket.TicketSease.svc?disco" />
+    <MetadataFile FileName="BLL集团客运综合管理.xsd" MetadataType="Schema" ID="a46cddd1-944b-40d8-a1ff-e32d49dae8b2" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.SeaseTicket.TicketSease.svc?xsd=xsd2" />
+    <MetadataFile FileName="BLL集团客运综合管理1.xsd" MetadataType="Schema" ID="365c17ef-cbd7-4e37-a9b3-7539ca8a3a2d" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.SeaseTicket.TicketSease.svc?xsd=xsd1" />
+    <MetadataFile FileName="BLL集团客运综合管理2.xsd" MetadataType="Schema" ID="489b32cc-e2b5-4e29-b91c-c9f1f2d93453" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.SeaseTicket.TicketSease.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

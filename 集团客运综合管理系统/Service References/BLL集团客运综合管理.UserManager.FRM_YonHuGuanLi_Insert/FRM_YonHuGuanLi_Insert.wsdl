@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FRM_YonHuGuanLi_Insert" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Insert.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Insert.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Insert.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="FRM_YonHuGuanLi_Insert_SelectUserType_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectUserType" />
+  </wsdl:message>
+  <wsdl:message name="FRM_YonHuGuanLi_Insert_SelectUserType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectUserTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_YonHuGuanLi_Insert_SelectCarStand_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCarStand" />
+  </wsdl:message>
+  <wsdl:message name="FRM_YonHuGuanLi_Insert_SelectCarStand_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCarStandResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_YonHuGuanLi_Insert_SelectCheZhanByCarStandMC_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheZhanByCarStandMC" />
+  </wsdl:message>
+  <wsdl:message name="FRM_YonHuGuanLi_Insert_SelectCheZhanByCarStandMC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheZhanByCarStandMCResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_YonHuGuanLi_Insert_SelectUserTypeByUserTypeMC_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectUserTypeByUserTypeMC" />
+  </wsdl:message>
+  <wsdl:message name="FRM_YonHuGuanLi_Insert_SelectUserTypeByUserTypeMC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectUserTypeByUserTypeMCResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_YonHuGuanLi_Insert_InsertCarStandXinXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCarStandXinXi" />
+  </wsdl:message>
+  <wsdl:message name="FRM_YonHuGuanLi_Insert_InsertCarStandXinXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCarStandXinXiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_YonHuGuanLi_Insert_InsertUserTypeXinXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserTypeXinXi" />
+  </wsdl:message>
+  <wsdl:message name="FRM_YonHuGuanLi_Insert_InsertUserTypeXinXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserTypeXinXiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_YonHuGuanLi_Insert_InsertUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUser" />
+  </wsdl:message>
+  <wsdl:message name="FRM_YonHuGuanLi_Insert_InsertUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FRM_YonHuGuanLi_Insert">
+    <wsdl:operation name="SelectUserType">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_YonHuGuanLi_Insert/SelectUserType" message="tns:FRM_YonHuGuanLi_Insert_SelectUserType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_YonHuGuanLi_Insert/SelectUserTypeResponse" message="tns:FRM_YonHuGuanLi_Insert_SelectUserType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectCarStand">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_YonHuGuanLi_Insert/SelectCarStand" message="tns:FRM_YonHuGuanLi_Insert_SelectCarStand_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_YonHuGuanLi_Insert/SelectCarStandResponse" message="tns:FRM_YonHuGuanLi_Insert_SelectCarStand_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectCheZhanByCarStandMC">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_YonHuGuanLi_Insert/SelectCheZhanByCarStandMC" message="tns:FRM_YonHuGuanLi_Insert_SelectCheZhanByCarStandMC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_YonHuGuanLi_Insert/SelectCheZhanByCarStandMCResponse" message="tns:FRM_YonHuGuanLi_Insert_SelectCheZhanByCarStandMC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectUserTypeByUserTypeMC">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_YonHuGuanLi_Insert/SelectUserTypeByUserTypeMC" message="tns:FRM_YonHuGuanLi_Insert_SelectUserTypeByUserTypeMC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_YonHuGuanLi_Insert/SelectUserTypeByUserTypeMCResponse" message="tns:FRM_YonHuGuanLi_Insert_SelectUserTypeByUserTypeMC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCarStandXinXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_YonHuGuanLi_Insert/InsertCarStandXinXi" message="tns:FRM_YonHuGuanLi_Insert_InsertCarStandXinXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_YonHuGuanLi_Insert/InsertCarStandXinXiResponse" message="tns:FRM_YonHuGuanLi_Insert_InsertCarStandXinXi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUserTypeXinXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_YonHuGuanLi_Insert/InsertUserTypeXinXi" message="tns:FRM_YonHuGuanLi_Insert_InsertUserTypeXinXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_YonHuGuanLi_Insert/InsertUserTypeXinXiResponse" message="tns:FRM_YonHuGuanLi_Insert_InsertUserTypeXinXi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_YonHuGuanLi_Insert/InsertUser" message="tns:FRM_YonHuGuanLi_Insert_InsertUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_YonHuGuanLi_Insert/InsertUserResponse" message="tns:FRM_YonHuGuanLi_Insert_InsertUser_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Insert" type="tns:FRM_YonHuGuanLi_Insert">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SelectUserType">
+      <soap:operation soapAction="http://tempuri.org/FRM_YonHuGuanLi_Insert/SelectUserType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectCarStand">
+      <soap:operation soapAction="http://tempuri.org/FRM_YonHuGuanLi_Insert/SelectCarStand" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectCheZhanByCarStandMC">
+      <soap:operation soapAction="http://tempuri.org/FRM_YonHuGuanLi_Insert/SelectCheZhanByCarStandMC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectUserTypeByUserTypeMC">
+      <soap:operation soapAction="http://tempuri.org/FRM_YonHuGuanLi_Insert/SelectUserTypeByUserTypeMC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCarStandXinXi">
+      <soap:operation soapAction="http://tempuri.org/FRM_YonHuGuanLi_Insert/InsertCarStandXinXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUserTypeXinXi">
+      <soap:operation soapAction="http://tempuri.org/FRM_YonHuGuanLi_Insert/InsertUserTypeXinXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUser">
+      <soap:operation soapAction="http://tempuri.org/FRM_YonHuGuanLi_Insert/InsertUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FRM_YonHuGuanLi_Insert">
+    <wsdl:port name="BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Insert" binding="tns:BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Insert">
+      <soap:address location="http://localhost:52701/BLL%E9%9B%86%E5%9B%A2%E5%AE%A2%E8%BF%90%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86.UserManager.FRM_YonHuGuanLi_Insert.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Campseizedmoneyguanli" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Campseizedmoneyguanli_selectyonghu_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectyonghu" />
+  </wsdl:message>
+  <wsdl:message name="Campseizedmoneyguanli_selectyonghu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectyonghuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Campseizedmoneyguanli_Campseizedmoney_selectdangqianpiaohao_InputMessage">
+    <wsdl:part name="parameters" element="tns:Campseizedmoney_selectdangqianpiaohao" />
+  </wsdl:message>
+  <wsdl:message name="Campseizedmoneyguanli_Campseizedmoney_selectdangqianpiaohao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Campseizedmoney_selectdangqianpiaohaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Campseizedmoneyguanli_Campseizedmoney_selectshoupiaozhangshu_InputMessage">
+    <wsdl:part name="parameters" element="tns:Campseizedmoney_selectshoupiaozhangshu" />
+  </wsdl:message>
+  <wsdl:message name="Campseizedmoneyguanli_Campseizedmoney_selectshoupiaozhangshu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Campseizedmoney_selectshoupiaozhangshuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Campseizedmoneyguanli_Campseizedmoney_insectyingshoujiaofeidan_InputMessage">
+    <wsdl:part name="parameters" element="tns:Campseizedmoney_insectyingshoujiaofeidan" />
+  </wsdl:message>
+  <wsdl:message name="Campseizedmoneyguanli_Campseizedmoney_insectyingshoujiaofeidan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Campseizedmoney_insectyingshoujiaofeidanResponse" />
+  </wsdl:message>
+  <wsdl:message name="Campseizedmoneyguanli_Campseizedmoney_yingshoudan_InputMessage">
+    <wsdl:part name="parameters" element="tns:Campseizedmoney_yingshoudan" />
+  </wsdl:message>
+  <wsdl:message name="Campseizedmoneyguanli_Campseizedmoney_yingshoudan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Campseizedmoney_yingshoudanResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Campseizedmoneyguanli">
+    <wsdl:operation name="selectyonghu">
+      <wsdl:input wsaw:Action="http://tempuri.org/Campseizedmoneyguanli/selectyonghu" message="tns:Campseizedmoneyguanli_selectyonghu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Campseizedmoneyguanli/selectyonghuResponse" message="tns:Campseizedmoneyguanli_selectyonghu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Campseizedmoney_selectdangqianpiaohao">
+      <wsdl:input wsaw:Action="http://tempuri.org/Campseizedmoneyguanli/Campseizedmoney_selectdangqianpiaohao" message="tns:Campseizedmoneyguanli_Campseizedmoney_selectdangqianpiaohao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Campseizedmoneyguanli/Campseizedmoney_selectdangqianpiaohaoResponse" message="tns:Campseizedmoneyguanli_Campseizedmoney_selectdangqianpiaohao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Campseizedmoney_selectshoupiaozhangshu">
+      <wsdl:input wsaw:Action="http://tempuri.org/Campseizedmoneyguanli/Campseizedmoney_selectshoupiaozhangshu" message="tns:Campseizedmoneyguanli_Campseizedmoney_selectshoupiaozhangshu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Campseizedmoneyguanli/Campseizedmoney_selectshoupiaozhangshuResponse" message="tns:Campseizedmoneyguanli_Campseizedmoney_selectshoupiaozhangshu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Campseizedmoney_insectyingshoujiaofeidan">
+      <wsdl:input wsaw:Action="http://tempuri.org/Campseizedmoneyguanli/Campseizedmoney_insectyingshoujiaofeidan" message="tns:Campseizedmoneyguanli_Campseizedmoney_insectyingshoujiaofeidan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Campseizedmoneyguanli/Campseizedmoney_insectyingshoujiaofeidanResponse" message="tns:Campseizedmoneyguanli_Campseizedmoney_insectyingshoujiaofeidan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Campseizedmoney_yingshoudan">
+      <wsdl:input wsaw:Action="http://tempuri.org/Campseizedmoneyguanli/Campseizedmoney_yingshoudan" message="tns:Campseizedmoneyguanli_Campseizedmoney_yingshoudan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Campseizedmoneyguanli/Campseizedmoney_yingshoudanResponse" message="tns:Campseizedmoneyguanli_Campseizedmoney_yingshoudan_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli" type="tns:Campseizedmoneyguanli">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="selectyonghu">
+      <soap:operation soapAction="http://tempuri.org/Campseizedmoneyguanli/selectyonghu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Campseizedmoney_selectdangqianpiaohao">
+      <soap:operation soapAction="http://tempuri.org/Campseizedmoneyguanli/Campseizedmoney_selectdangqianpiaohao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Campseizedmoney_selectshoupiaozhangshu">
+      <soap:operation soapAction="http://tempuri.org/Campseizedmoneyguanli/Campseizedmoney_selectshoupiaozhangshu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Campseizedmoney_insectyingshoujiaofeidan">
+      <soap:operation soapAction="http://tempuri.org/Campseizedmoneyguanli/Campseizedmoney_insectyingshoujiaofeidan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Campseizedmoney_yingshoudan">
+      <soap:operation soapAction="http://tempuri.org/Campseizedmoneyguanli/Campseizedmoney_yingshoudan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Campseizedmoneyguanli">
+    <wsdl:port name="BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli" binding="tns:BLL集团客运综合管理.CampseizedmoneyManager.Campseizedmoneyguanli">
+      <soap:address location="http://localhost:52701/BLL%E9%9B%86%E5%9B%A2%E5%AE%A2%E8%BF%90%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86.CampseizedmoneyManager.Campseizedmoneyguanli.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

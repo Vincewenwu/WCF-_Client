@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9773791d-ef2b-4dae-ac90-d315bbbe92ff" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52701/BLL集团客运综合管理.FrequencyManager.FrequencyListManager.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BLL集团客运综合管理.xsd" MetadataType="Schema" ID="501517ab-0388-4024-b13d-366ee4e69118" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.FrequencyManager.FrequencyListManager.svc?xsd=xsd2" />
+    <MetadataFile FileName="BLL集团客运综合管理.disco" MetadataType="Disco" ID="c8661e22-dcc1-4ccb-959f-9842f780db90" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.FrequencyManager.FrequencyListManager.svc?disco" />
+    <MetadataFile FileName="BLL集团客运综合管理1.xsd" MetadataType="Schema" ID="3a12489f-b535-48b4-8585-a3ecd8b313e9" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.FrequencyManager.FrequencyListManager.svc?xsd=xsd0" />
+    <MetadataFile FileName="BLL集团客运综合管理2.xsd" MetadataType="Schema" ID="69fb86ff-c365-401d-af38-f3ec8e6697f1" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.FrequencyManager.FrequencyListManager.svc?xsd=xsd1" />
+    <MetadataFile FileName="FrequencyListManager.wsdl" MetadataType="Wsdl" ID="8d94e363-b924-4044-8e1a-ccb3b94242a1" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.FrequencyManager.FrequencyListManager.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2b40a0bd-e938-48c6-8f3d-f7b305678438" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52701/BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Update.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BLL集团客运综合管理.disco" MetadataType="Disco" ID="fb22f4b9-219d-4993-80c5-b33bfb734dfe" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Update.svc?disco" />
+    <MetadataFile FileName="BLL集团客运综合管理.xsd" MetadataType="Schema" ID="0dea3a59-63aa-484a-8288-e99961733e05" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Update.svc?xsd=xsd2" />
+    <MetadataFile FileName="FRM_JiaShiYuanGuanLi_Update.wsdl" MetadataType="Wsdl" ID="8f54b769-ed57-4786-a199-17c3bcdca01f" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Update.svc?wsdl" />
+    <MetadataFile FileName="BLL集团客运综合管理1.xsd" MetadataType="Schema" ID="6e74c39e-d85d-41a8-a1ac-3df7f5a756bc" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Update.svc?xsd=xsd0" />
+    <MetadataFile FileName="BLL集团客运综合管理2.xsd" MetadataType="Schema" ID="d2ea3343-4af4-4c7d-b1fe-4a97b9bee046" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanGuanLi_Update.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

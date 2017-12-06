@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FRM_CheLiangGuangLi_Insert" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Insert.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Insert.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Insert.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="FRM_CheLiangGuangLi_Insert_SelectDriverNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectDriverNumber" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_Insert_SelectDriverNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectDriverNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_Insert_SelectJiaShiYuanByDriverNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectJiaShiYuanByDriverNumber" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_Insert_SelectJiaShiYuanByDriverNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectJiaShiYuanByDriverNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_Insert_SelectChengBaoGonSi_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectChengBaoGonSi" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_Insert_SelectChengBaoGonSi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectChengBaoGonSiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_Insert_SelectCheShuDangWei_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheShuDangWei" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_Insert_SelectCheShuDangWei_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheShuDangWeiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_Insert_SelectCheLiangLeiXing_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheLiangLeiXing" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_Insert_SelectCheLiangLeiXing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheLiangLeiXingResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_Insert_InsertCheLiangXinXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCheLiangXinXi" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_Insert_InsertCheLiangXinXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCheLiangXinXiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_Insert_InsertBaoXian_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertBaoXian" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_Insert_InsertBaoXian_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertBaoXianResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_Insert_InsertCheLiangZhengJianXingXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCheLiangZhengJianXingXi" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_Insert_InsertCheLiangZhengJianXingXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCheLiangZhengJianXingXiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_Insert_InsertCheZhu_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCheZhu" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_Insert_InsertCheZhu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCheZhuResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_Insert_InsertXiWei_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertXiWei" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_Insert_InsertXiWei_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertXiWeiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_Insert_SelectXiweigeshu_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectXiweigeshu" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_Insert_SelectXiweigeshu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectXiweigeshuResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FRM_CheLiangGuangLi_Insert">
+    <wsdl:operation name="SelectDriverNumber">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi_Insert/SelectDriverNumber" message="tns:FRM_CheLiangGuangLi_Insert_SelectDriverNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi_Insert/SelectDriverNumberResponse" message="tns:FRM_CheLiangGuangLi_Insert_SelectDriverNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectJiaShiYuanByDriverNumber">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi_Insert/SelectJiaShiYuanByDriverNumber" message="tns:FRM_CheLiangGuangLi_Insert_SelectJiaShiYuanByDriverNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi_Insert/SelectJiaShiYuanByDriverNumberResponse" message="tns:FRM_CheLiangGuangLi_Insert_SelectJiaShiYuanByDriverNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectChengBaoGonSi">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi_Insert/SelectChengBaoGonSi" message="tns:FRM_CheLiangGuangLi_Insert_SelectChengBaoGonSi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi_Insert/SelectChengBaoGonSiResponse" message="tns:FRM_CheLiangGuangLi_Insert_SelectChengBaoGonSi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectCheShuDangWei">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi_Insert/SelectCheShuDangWei" message="tns:FRM_CheLiangGuangLi_Insert_SelectCheShuDangWei_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi_Insert/SelectCheShuDangWeiResponse" message="tns:FRM_CheLiangGuangLi_Insert_SelectCheShuDangWei_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectCheLiangLeiXing">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi_Insert/SelectCheLiangLeiXing" message="tns:FRM_CheLiangGuangLi_Insert_SelectCheLiangLeiXing_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi_Insert/SelectCheLiangLeiXingResponse" message="tns:FRM_CheLiangGuangLi_Insert_SelectCheLiangLeiXing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCheLiangXinXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi_Insert/InsertCheLiangXinXi" message="tns:FRM_CheLiangGuangLi_Insert_InsertCheLiangXinXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi_Insert/InsertCheLiangXinXiResponse" message="tns:FRM_CheLiangGuangLi_Insert_InsertCheLiangXinXi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertBaoXian">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi_Insert/InsertBaoXian" message="tns:FRM_CheLiangGuangLi_Insert_InsertBaoXian_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi_Insert/InsertBaoXianResponse" message="tns:FRM_CheLiangGuangLi_Insert_InsertBaoXian_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCheLiangZhengJianXingXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi_Insert/InsertCheLiangZhengJianXingXi" message="tns:FRM_CheLiangGuangLi_Insert_InsertCheLiangZhengJianXingXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi_Insert/InsertCheLiangZhengJianXingXiResponse" message="tns:FRM_CheLiangGuangLi_Insert_InsertCheLiangZhengJianXingXi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCheZhu">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi_Insert/InsertCheZhu" message="tns:FRM_CheLiangGuangLi_Insert_InsertCheZhu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi_Insert/InsertCheZhuResponse" message="tns:FRM_CheLiangGuangLi_Insert_InsertCheZhu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertXiWei">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi_Insert/InsertXiWei" message="tns:FRM_CheLiangGuangLi_Insert_InsertXiWei_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi_Insert/InsertXiWeiResponse" message="tns:FRM_CheLiangGuangLi_Insert_InsertXiWei_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectXiweigeshu">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi_Insert/SelectXiweigeshu" message="tns:FRM_CheLiangGuangLi_Insert_SelectXiweigeshu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi_Insert/SelectXiweigeshuResponse" message="tns:FRM_CheLiangGuangLi_Insert_SelectXiweigeshu_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Insert" type="tns:FRM_CheLiangGuangLi_Insert">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SelectDriverNumber">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangGuangLi_Insert/SelectDriverNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectJiaShiYuanByDriverNumber">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangGuangLi_Insert/SelectJiaShiYuanByDriverNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectChengBaoGonSi">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangGuangLi_Insert/SelectChengBaoGonSi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectCheShuDangWei">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangGuangLi_Insert/SelectCheShuDangWei" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectCheLiangLeiXing">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangGuangLi_Insert/SelectCheLiangLeiXing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCheLiangXinXi">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangGuangLi_Insert/InsertCheLiangXinXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertBaoXian">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangGuangLi_Insert/InsertBaoXian" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCheLiangZhengJianXingXi">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangGuangLi_Insert/InsertCheLiangZhengJianXingXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCheZhu">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangGuangLi_Insert/InsertCheZhu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertXiWei">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangGuangLi_Insert/InsertXiWei" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectXiweigeshu">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangGuangLi_Insert/SelectXiweigeshu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FRM_CheLiangGuangLi_Insert">
+    <wsdl:port name="BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Insert" binding="tns:BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi_Insert">
+      <soap:address location="http://localhost:52701/BLL%E9%9B%86%E5%9B%A2%E5%AE%A2%E8%BF%90%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86.VehicleManage.FRM_CheLiangGuangLi_Insert.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

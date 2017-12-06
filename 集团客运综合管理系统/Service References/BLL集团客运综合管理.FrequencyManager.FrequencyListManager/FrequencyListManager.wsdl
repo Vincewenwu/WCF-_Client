@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FrequencyListManager" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.FrequencyManager.FrequencyListManager.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.FrequencyManager.FrequencyListManager.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.FrequencyManager.FrequencyListManager.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="FrequencyListManager_SelectFrequency_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectFrequency" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SelectFrequency_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectFrequencyResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_selectzhongshu_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectzhongshu" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_selectzhongshu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectzhongshuResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_UPDATErequency_InputMessage">
+    <wsdl:part name="parameters" element="tns:UPDATErequency" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_UPDATErequency_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UPDATErequencyResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SelectOnFrequencyID_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectOnFrequencyID" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SelectOnFrequencyID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectOnFrequencyIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_IntsertStopsinroute_InputMessage">
+    <wsdl:part name="parameters" element="tns:IntsertStopsinroute" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_IntsertStopsinroute_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IntsertStopsinrouteResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_selectbancimingcheng_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectbancimingcheng" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_selectbancimingcheng_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectbancimingchengResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SelectBelong_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectBelong" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SelectBelong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectBelongResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SelectTuJinStaion_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectTuJinStaion" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SelectTuJinStaion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectTuJinStaionResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SelectTuJinnewStaion_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectTuJinnewStaion" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SelectTuJinnewStaion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectTuJinnewStaionResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SelectMAXStaionxuhao_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectMAXStaionxuhao" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SelectMAXStaionxuhao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectMAXStaionxuhaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_Selectxhelaingxiweishu_InputMessage">
+    <wsdl:part name="parameters" element="tns:Selectxhelaingxiweishu" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_Selectxhelaingxiweishu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectxhelaingxiweishuResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_UpdateTuJinStation_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTuJinStation" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_UpdateTuJinStation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTuJinStationResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SelectTuJinStaionMoHu_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectTuJinStaionMoHu" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SelectTuJinStaionMoHu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectTuJinStaionMoHuResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SelectUpdatetujinStation_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectUpdatetujinStation" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SelectUpdatetujinStation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectUpdatetujinStationResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SelectagainUpdatetujinStation_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectagainUpdatetujinStation" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SelectagainUpdatetujinStation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectagainUpdatetujinStationResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_Caculateprice_InputMessage">
+    <wsdl:part name="parameters" element="tns:Caculateprice" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_Caculateprice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CaculatepriceResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_InsectCaculateprice_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsectCaculateprice" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_InsectCaculateprice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsectCaculatepriceResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_selecttujinzhandian_InputMessage">
+    <wsdl:part name="parameters" element="tns:selecttujinzhandian" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_selecttujinzhandian_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selecttujinzhandianResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SelectSeatTypeID_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectSeatTypeID" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SelectSeatTypeID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectSeatTypeIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SelectTicketPriceTypeID_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectTicketPriceTypeID" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SelectTicketPriceTypeID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectTicketPriceTypeIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SelectStationtickprice_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectStationtickprice" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SelectStationtickprice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectStationtickpriceResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SeleectFrequencyIDtoVehicleID_InputMessage">
+    <wsdl:part name="parameters" element="tns:SeleectFrequencyIDtoVehicleID" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_SeleectFrequencyIDtoVehicleID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SeleectFrequencyIDtoVehicleIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_DeleteTicketPriceOnFrequencyID_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTicketPriceOnFrequencyID" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_DeleteTicketPriceOnFrequencyID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTicketPriceOnFrequencyIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_UpdateVehicleStateOnFrequencyID_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateVehicleStateOnFrequencyID" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_UpdateVehicleStateOnFrequencyID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateVehicleStateOnFrequencyIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_UpdateallFrequency_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateallFrequency" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_UpdateallFrequency_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateallFrequencyResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_selectbanbiao_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectbanbiao" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_selectbanbiao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectbanbiaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_DELETEtujinzhandian_InputMessage">
+    <wsdl:part name="parameters" element="tns:DELETEtujinzhandian" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_DELETEtujinzhandian_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DELETEtujinzhandianResponse" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_selectyonghuandleixing_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectyonghuandleixing" />
+  </wsdl:message>
+  <wsdl:message name="FrequencyListManager_selectyonghuandleixing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectyonghuandleixingResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FrequencyListManager">
+    <wsdl:operation name="SelectFrequency">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/SelectFrequency" message="tns:FrequencyListManager_SelectFrequency_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/SelectFrequencyResponse" message="tns:FrequencyListManager_SelectFrequency_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectzhongshu">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/selectzhongshu" message="tns:FrequencyListManager_selectzhongshu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/selectzhongshuResponse" message="tns:FrequencyListManager_selectzhongshu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UPDATErequency">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/UPDATErequency" message="tns:FrequencyListManager_UPDATErequency_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/UPDATErequencyResponse" message="tns:FrequencyListManager_UPDATErequency_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectOnFrequencyID">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/SelectOnFrequencyID" message="tns:FrequencyListManager_SelectOnFrequencyID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/SelectOnFrequencyIDResponse" message="tns:FrequencyListManager_SelectOnFrequencyID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IntsertStopsinroute">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/IntsertStopsinroute" message="tns:FrequencyListManager_IntsertStopsinroute_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/IntsertStopsinrouteResponse" message="tns:FrequencyListManager_IntsertStopsinroute_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectbancimingcheng">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/selectbancimingcheng" message="tns:FrequencyListManager_selectbancimingcheng_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/selectbancimingchengResponse" message="tns:FrequencyListManager_selectbancimingcheng_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectBelong">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/SelectBelong" message="tns:FrequencyListManager_SelectBelong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/SelectBelongResponse" message="tns:FrequencyListManager_SelectBelong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectTuJinStaion">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/SelectTuJinStaion" message="tns:FrequencyListManager_SelectTuJinStaion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/SelectTuJinStaionResponse" message="tns:FrequencyListManager_SelectTuJinStaion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectTuJinnewStaion">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/SelectTuJinnewStaion" message="tns:FrequencyListManager_SelectTuJinnewStaion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/SelectTuJinnewStaionResponse" message="tns:FrequencyListManager_SelectTuJinnewStaion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectMAXStaionxuhao">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/SelectMAXStaionxuhao" message="tns:FrequencyListManager_SelectMAXStaionxuhao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/SelectMAXStaionxuhaoResponse" message="tns:FrequencyListManager_SelectMAXStaionxuhao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Selectxhelaingxiweishu">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/Selectxhelaingxiweishu" message="tns:FrequencyListManager_Selectxhelaingxiweishu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/SelectxhelaingxiweishuResponse" message="tns:FrequencyListManager_Selectxhelaingxiweishu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTuJinStation">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/UpdateTuJinStation" message="tns:FrequencyListManager_UpdateTuJinStation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/UpdateTuJinStationResponse" message="tns:FrequencyListManager_UpdateTuJinStation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectTuJinStaionMoHu">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/SelectTuJinStaionMoHu" message="tns:FrequencyListManager_SelectTuJinStaionMoHu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/SelectTuJinStaionMoHuResponse" message="tns:FrequencyListManager_SelectTuJinStaionMoHu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectUpdatetujinStation">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/SelectUpdatetujinStation" message="tns:FrequencyListManager_SelectUpdatetujinStation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/SelectUpdatetujinStationResponse" message="tns:FrequencyListManager_SelectUpdatetujinStation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectagainUpdatetujinStation">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/SelectagainUpdatetujinStation" message="tns:FrequencyListManager_SelectagainUpdatetujinStation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/SelectagainUpdatetujinStationResponse" message="tns:FrequencyListManager_SelectagainUpdatetujinStation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Caculateprice">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/Caculateprice" message="tns:FrequencyListManager_Caculateprice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/CaculatepriceResponse" message="tns:FrequencyListManager_Caculateprice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsectCaculateprice">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/InsectCaculateprice" message="tns:FrequencyListManager_InsectCaculateprice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/InsectCaculatepriceResponse" message="tns:FrequencyListManager_InsectCaculateprice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selecttujinzhandian">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/selecttujinzhandian" message="tns:FrequencyListManager_selecttujinzhandian_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/selecttujinzhandianResponse" message="tns:FrequencyListManager_selecttujinzhandian_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectSeatTypeID">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/SelectSeatTypeID" message="tns:FrequencyListManager_SelectSeatTypeID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/SelectSeatTypeIDResponse" message="tns:FrequencyListManager_SelectSeatTypeID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectTicketPriceTypeID">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/SelectTicketPriceTypeID" message="tns:FrequencyListManager_SelectTicketPriceTypeID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/SelectTicketPriceTypeIDResponse" message="tns:FrequencyListManager_SelectTicketPriceTypeID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectStationtickprice">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/SelectStationtickprice" message="tns:FrequencyListManager_SelectStationtickprice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/SelectStationtickpriceResponse" message="tns:FrequencyListManager_SelectStationtickprice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SeleectFrequencyIDtoVehicleID">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/SeleectFrequencyIDtoVehicleID" message="tns:FrequencyListManager_SeleectFrequencyIDtoVehicleID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/SeleectFrequencyIDtoVehicleIDResponse" message="tns:FrequencyListManager_SeleectFrequencyIDtoVehicleID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTicketPriceOnFrequencyID">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/DeleteTicketPriceOnFrequencyID" message="tns:FrequencyListManager_DeleteTicketPriceOnFrequencyID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/DeleteTicketPriceOnFrequencyIDResponse" message="tns:FrequencyListManager_DeleteTicketPriceOnFrequencyID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVehicleStateOnFrequencyID">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/UpdateVehicleStateOnFrequencyID" message="tns:FrequencyListManager_UpdateVehicleStateOnFrequencyID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/UpdateVehicleStateOnFrequencyIDResponse" message="tns:FrequencyListManager_UpdateVehicleStateOnFrequencyID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateallFrequency">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/UpdateallFrequency" message="tns:FrequencyListManager_UpdateallFrequency_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/UpdateallFrequencyResponse" message="tns:FrequencyListManager_UpdateallFrequency_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectbanbiao">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/selectbanbiao" message="tns:FrequencyListManager_selectbanbiao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/selectbanbiaoResponse" message="tns:FrequencyListManager_selectbanbiao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DELETEtujinzhandian">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/DELETEtujinzhandian" message="tns:FrequencyListManager_DELETEtujinzhandian_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/DELETEtujinzhandianResponse" message="tns:FrequencyListManager_DELETEtujinzhandian_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectyonghuandleixing">
+      <wsdl:input wsaw:Action="http://tempuri.org/FrequencyListManager/selectyonghuandleixing" message="tns:FrequencyListManager_selectyonghuandleixing_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FrequencyListManager/selectyonghuandleixingResponse" message="tns:FrequencyListManager_selectyonghuandleixing_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL集团客运综合管理.FrequencyManager.FrequencyListManager" type="tns:FrequencyListManager">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SelectFrequency">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/SelectFrequency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectzhongshu">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/selectzhongshu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UPDATErequency">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/UPDATErequency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectOnFrequencyID">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/SelectOnFrequencyID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IntsertStopsinroute">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/IntsertStopsinroute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectbancimingcheng">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/selectbancimingcheng" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectBelong">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/SelectBelong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectTuJinStaion">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/SelectTuJinStaion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectTuJinnewStaion">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/SelectTuJinnewStaion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectMAXStaionxuhao">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/SelectMAXStaionxuhao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Selectxhelaingxiweishu">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/Selectxhelaingxiweishu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTuJinStation">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/UpdateTuJinStation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectTuJinStaionMoHu">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/SelectTuJinStaionMoHu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectUpdatetujinStation">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/SelectUpdatetujinStation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectagainUpdatetujinStation">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/SelectagainUpdatetujinStation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Caculateprice">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/Caculateprice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsectCaculateprice">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/InsectCaculateprice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selecttujinzhandian">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/selecttujinzhandian" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectSeatTypeID">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/SelectSeatTypeID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectTicketPriceTypeID">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/SelectTicketPriceTypeID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectStationtickprice">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/SelectStationtickprice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SeleectFrequencyIDtoVehicleID">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/SeleectFrequencyIDtoVehicleID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTicketPriceOnFrequencyID">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/DeleteTicketPriceOnFrequencyID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVehicleStateOnFrequencyID">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/UpdateVehicleStateOnFrequencyID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateallFrequency">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/UpdateallFrequency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectbanbiao">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/selectbanbiao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DELETEtujinzhandian">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/DELETEtujinzhandian" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectyonghuandleixing">
+      <soap:operation soapAction="http://tempuri.org/FrequencyListManager/selectyonghuandleixing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FrequencyListManager">
+    <wsdl:port name="BLL集团客运综合管理.FrequencyManager.FrequencyListManager" binding="tns:BLL集团客运综合管理.FrequencyManager.FrequencyListManager">
+      <soap:address location="http://localhost:52701/BLL%E9%9B%86%E5%9B%A2%E5%AE%A2%E8%BF%90%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86.FrequencyManager.FrequencyListManager.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

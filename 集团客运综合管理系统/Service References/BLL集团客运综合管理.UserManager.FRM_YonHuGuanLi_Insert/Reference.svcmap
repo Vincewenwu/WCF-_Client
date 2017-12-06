@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ec6b1312-c989-4a86-b8aa-dceeae0f4734" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52701/BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Insert.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BLL集团客运综合管理.disco" MetadataType="Disco" ID="c901e4da-1911-47fc-b353-4922086dca66" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Insert.svc?disco" />
+    <MetadataFile FileName="BLL集团客运综合管理.xsd" MetadataType="Schema" ID="8567213a-03ee-4c61-9da2-22aca86fdd44" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Insert.svc?xsd=xsd0" />
+    <MetadataFile FileName="FRM_YonHuGuanLi_Insert.wsdl" MetadataType="Wsdl" ID="0b98ab52-5da9-4002-9cda-e260f060f64c" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Insert.svc?wsdl" />
+    <MetadataFile FileName="BLL集团客运综合管理1.xsd" MetadataType="Schema" ID="22d020a4-f693-4150-ab10-cefb89892cd1" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Insert.svc?xsd=xsd2" />
+    <MetadataFile FileName="BLL集团客运综合管理2.xsd" MetadataType="Schema" ID="c7dce2f4-5cdc-4e17-b90b-d373049ee39f" SourceId="1" SourceUrl="http://localhost:52701/BLL集团客运综合管理.UserManager.FRM_YonHuGuanLi_Insert.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

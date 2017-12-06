@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="chezhanjicha" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.chuzhanjicha.chezhanjicha.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.chuzhanjicha.chezhanjicha.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.chuzhanjicha.chezhanjicha.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="chezhanjicha_Selectchelaing_InputMessage">
+    <wsdl:part name="parameters" element="tns:Selectchelaing" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_Selectchelaing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectchelaingResponse" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_SelectchelaingID_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectchelaingID" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_SelectchelaingID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectchelaingIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_Selectchelaingxinhao_InputMessage">
+    <wsdl:part name="parameters" element="tns:Selectchelaingxinhao" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_Selectchelaingxinhao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectchelaingxinhaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_selectbanci_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectbanci" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_selectbanci_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectbanciResponse" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_selectbancirenshu_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectbancirenshu" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_selectbancirenshu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectbancirenshuResponse" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_selectbancirenshuertongshu_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectbancirenshuertongshu" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_selectbancirenshuertongshu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectbancirenshuertongshuResponse" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_INSERTchuzhanxinxi_InputMessage">
+    <wsdl:part name="parameters" element="tns:INSERTchuzhanxinxi" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_INSERTchuzhanxinxi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:INSERTchuzhanxinxiResponse" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_selectjichayuan_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectjichayuan" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_selectjichayuan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectjichayuanResponse" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_selectcheshudanwei_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectcheshudanwei" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_selectcheshudanwei_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectcheshudanweiResponse" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_insectchuzhanmingxi_InputMessage">
+    <wsdl:part name="parameters" element="tns:insectchuzhanmingxi" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_insectchuzhanmingxi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insectchuzhanmingxiResponse" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_selectjichaxianmu_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectjichaxianmu" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_selectjichaxianmu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectjichaxianmuResponse" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_updatechelaingzhuangtai_InputMessage">
+    <wsdl:part name="parameters" element="tns:updatechelaingzhuangtai" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_updatechelaingzhuangtai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updatechelaingzhuangtaiResponse" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_updatechelaingzhuangtaizuowei_InputMessage">
+    <wsdl:part name="parameters" element="tns:updatechelaingzhuangtaizuowei" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_updatechelaingzhuangtaizuowei_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updatechelaingzhuangtaizuoweiResponse" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_selectjichaxiangmu_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectjichaxiangmu" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_selectjichaxiangmu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectjichaxiangmuResponse" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_SELECTJICHAXIANGMUMINGXI_InputMessage">
+    <wsdl:part name="parameters" element="tns:SELECTJICHAXIANGMUMINGXI" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_SELECTJICHAXIANGMUMINGXI_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SELECTJICHAXIANGMUMINGXIResponse" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_selectcheliangjichadan_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectcheliangjichadan" />
+  </wsdl:message>
+  <wsdl:message name="chezhanjicha_selectcheliangjichadan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectcheliangjichadanResponse" />
+  </wsdl:message>
+  <wsdl:portType name="chezhanjicha">
+    <wsdl:operation name="Selectchelaing">
+      <wsdl:input wsaw:Action="http://tempuri.org/chezhanjicha/Selectchelaing" message="tns:chezhanjicha_Selectchelaing_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/chezhanjicha/SelectchelaingResponse" message="tns:chezhanjicha_Selectchelaing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectchelaingID">
+      <wsdl:input wsaw:Action="http://tempuri.org/chezhanjicha/SelectchelaingID" message="tns:chezhanjicha_SelectchelaingID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/chezhanjicha/SelectchelaingIDResponse" message="tns:chezhanjicha_SelectchelaingID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Selectchelaingxinhao">
+      <wsdl:input wsaw:Action="http://tempuri.org/chezhanjicha/Selectchelaingxinhao" message="tns:chezhanjicha_Selectchelaingxinhao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/chezhanjicha/SelectchelaingxinhaoResponse" message="tns:chezhanjicha_Selectchelaingxinhao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectbanci">
+      <wsdl:input wsaw:Action="http://tempuri.org/chezhanjicha/selectbanci" message="tns:chezhanjicha_selectbanci_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/chezhanjicha/selectbanciResponse" message="tns:chezhanjicha_selectbanci_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectbancirenshu">
+      <wsdl:input wsaw:Action="http://tempuri.org/chezhanjicha/selectbancirenshu" message="tns:chezhanjicha_selectbancirenshu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/chezhanjicha/selectbancirenshuResponse" message="tns:chezhanjicha_selectbancirenshu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectbancirenshuertongshu">
+      <wsdl:input wsaw:Action="http://tempuri.org/chezhanjicha/selectbancirenshuertongshu" message="tns:chezhanjicha_selectbancirenshuertongshu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/chezhanjicha/selectbancirenshuertongshuResponse" message="tns:chezhanjicha_selectbancirenshuertongshu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="INSERTchuzhanxinxi">
+      <wsdl:input wsaw:Action="http://tempuri.org/chezhanjicha/INSERTchuzhanxinxi" message="tns:chezhanjicha_INSERTchuzhanxinxi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/chezhanjicha/INSERTchuzhanxinxiResponse" message="tns:chezhanjicha_INSERTchuzhanxinxi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectjichayuan">
+      <wsdl:input wsaw:Action="http://tempuri.org/chezhanjicha/selectjichayuan" message="tns:chezhanjicha_selectjichayuan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/chezhanjicha/selectjichayuanResponse" message="tns:chezhanjicha_selectjichayuan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectcheshudanwei">
+      <wsdl:input wsaw:Action="http://tempuri.org/chezhanjicha/selectcheshudanwei" message="tns:chezhanjicha_selectcheshudanwei_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/chezhanjicha/selectcheshudanweiResponse" message="tns:chezhanjicha_selectcheshudanwei_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insectchuzhanmingxi">
+      <wsdl:input wsaw:Action="http://tempuri.org/chezhanjicha/insectchuzhanmingxi" message="tns:chezhanjicha_insectchuzhanmingxi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/chezhanjicha/insectchuzhanmingxiResponse" message="tns:chezhanjicha_insectchuzhanmingxi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectjichaxianmu">
+      <wsdl:input wsaw:Action="http://tempuri.org/chezhanjicha/selectjichaxianmu" message="tns:chezhanjicha_selectjichaxianmu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/chezhanjicha/selectjichaxianmuResponse" message="tns:chezhanjicha_selectjichaxianmu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updatechelaingzhuangtai">
+      <wsdl:input wsaw:Action="http://tempuri.org/chezhanjicha/updatechelaingzhuangtai" message="tns:chezhanjicha_updatechelaingzhuangtai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/chezhanjicha/updatechelaingzhuangtaiResponse" message="tns:chezhanjicha_updatechelaingzhuangtai_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updatechelaingzhuangtaizuowei">
+      <wsdl:input wsaw:Action="http://tempuri.org/chezhanjicha/updatechelaingzhuangtaizuowei" message="tns:chezhanjicha_updatechelaingzhuangtaizuowei_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/chezhanjicha/updatechelaingzhuangtaizuoweiResponse" message="tns:chezhanjicha_updatechelaingzhuangtaizuowei_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectjichaxiangmu">
+      <wsdl:input wsaw:Action="http://tempuri.org/chezhanjicha/selectjichaxiangmu" message="tns:chezhanjicha_selectjichaxiangmu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/chezhanjicha/selectjichaxiangmuResponse" message="tns:chezhanjicha_selectjichaxiangmu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SELECTJICHAXIANGMUMINGXI">
+      <wsdl:input wsaw:Action="http://tempuri.org/chezhanjicha/SELECTJICHAXIANGMUMINGXI" message="tns:chezhanjicha_SELECTJICHAXIANGMUMINGXI_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/chezhanjicha/SELECTJICHAXIANGMUMINGXIResponse" message="tns:chezhanjicha_SELECTJICHAXIANGMUMINGXI_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectcheliangjichadan">
+      <wsdl:input wsaw:Action="http://tempuri.org/chezhanjicha/selectcheliangjichadan" message="tns:chezhanjicha_selectcheliangjichadan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/chezhanjicha/selectcheliangjichadanResponse" message="tns:chezhanjicha_selectcheliangjichadan_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL集团客运综合管理.chuzhanjicha.chezhanjicha" type="tns:chezhanjicha">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Selectchelaing">
+      <soap:operation soapAction="http://tempuri.org/chezhanjicha/Selectchelaing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectchelaingID">
+      <soap:operation soapAction="http://tempuri.org/chezhanjicha/SelectchelaingID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Selectchelaingxinhao">
+      <soap:operation soapAction="http://tempuri.org/chezhanjicha/Selectchelaingxinhao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectbanci">
+      <soap:operation soapAction="http://tempuri.org/chezhanjicha/selectbanci" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectbancirenshu">
+      <soap:operation soapAction="http://tempuri.org/chezhanjicha/selectbancirenshu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectbancirenshuertongshu">
+      <soap:operation soapAction="http://tempuri.org/chezhanjicha/selectbancirenshuertongshu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="INSERTchuzhanxinxi">
+      <soap:operation soapAction="http://tempuri.org/chezhanjicha/INSERTchuzhanxinxi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectjichayuan">
+      <soap:operation soapAction="http://tempuri.org/chezhanjicha/selectjichayuan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectcheshudanwei">
+      <soap:operation soapAction="http://tempuri.org/chezhanjicha/selectcheshudanwei" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insectchuzhanmingxi">
+      <soap:operation soapAction="http://tempuri.org/chezhanjicha/insectchuzhanmingxi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectjichaxianmu">
+      <soap:operation soapAction="http://tempuri.org/chezhanjicha/selectjichaxianmu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatechelaingzhuangtai">
+      <soap:operation soapAction="http://tempuri.org/chezhanjicha/updatechelaingzhuangtai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatechelaingzhuangtaizuowei">
+      <soap:operation soapAction="http://tempuri.org/chezhanjicha/updatechelaingzhuangtaizuowei" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectjichaxiangmu">
+      <soap:operation soapAction="http://tempuri.org/chezhanjicha/selectjichaxiangmu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SELECTJICHAXIANGMUMINGXI">
+      <soap:operation soapAction="http://tempuri.org/chezhanjicha/SELECTJICHAXIANGMUMINGXI" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectcheliangjichadan">
+      <soap:operation soapAction="http://tempuri.org/chezhanjicha/selectcheliangjichadan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="chezhanjicha">
+    <wsdl:port name="BLL集团客运综合管理.chuzhanjicha.chezhanjicha" binding="tns:BLL集团客运综合管理.chuzhanjicha.chezhanjicha">
+      <soap:address location="http://localhost:52701/BLL%E9%9B%86%E5%9B%A2%E5%AE%A2%E8%BF%90%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86.chuzhanjicha.chezhanjicha.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

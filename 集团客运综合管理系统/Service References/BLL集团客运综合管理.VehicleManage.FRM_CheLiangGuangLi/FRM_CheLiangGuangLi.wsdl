@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FRM_CheLiangGuangLi" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="FRM_CheLiangGuangLi_SelectCheLiangBianHao_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheLiangBianHao" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_SelectCheLiangBianHao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheLiangBianHaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_SelectCheLiangXinXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheLiangXinXi" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_SelectCheLiangXinXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheLiangXinXiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_SelectCheLiangXinXiByVehiclePaiNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheLiangXinXiByVehiclePaiNumber" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_SelectCheLiangXinXiByVehiclePaiNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheLiangXinXiByVehiclePaiNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_SelectCheLiangXinXiByVehicleNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheLiangXinXiByVehicleNumber" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_SelectCheLiangXinXiByVehicleNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheLiangXinXiByVehicleNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_SelectCheLiangMingXiXinXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheLiangMingXiXinXi" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_SelectCheLiangMingXiXinXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheLiangMingXiXinXiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_DeleteCheZhuXinXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCheZhuXinXi" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_DeleteCheZhuXinXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCheZhuXinXiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_DeleteBaoXianXinXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBaoXianXinXi" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_DeleteBaoXianXinXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBaoXianXinXiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_DeleteCheLiangZhengJianXinXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCheLiangZhengJianXinXi" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_DeleteCheLiangZhengJianXinXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCheLiangZhengJianXinXiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_DeleteCheLiangXinXi_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCheLiangXinXi" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_DeleteCheLiangXinXi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCheLiangXinXiResponse" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_DeleteXiWei_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteXiWei" />
+  </wsdl:message>
+  <wsdl:message name="FRM_CheLiangGuangLi_DeleteXiWei_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteXiWeiResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FRM_CheLiangGuangLi">
+    <wsdl:operation name="SelectCheLiangBianHao">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi/SelectCheLiangBianHao" message="tns:FRM_CheLiangGuangLi_SelectCheLiangBianHao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi/SelectCheLiangBianHaoResponse" message="tns:FRM_CheLiangGuangLi_SelectCheLiangBianHao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectCheLiangXinXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi/SelectCheLiangXinXi" message="tns:FRM_CheLiangGuangLi_SelectCheLiangXinXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi/SelectCheLiangXinXiResponse" message="tns:FRM_CheLiangGuangLi_SelectCheLiangXinXi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectCheLiangXinXiByVehiclePaiNumber">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi/SelectCheLiangXinXiByVehiclePaiNumber" message="tns:FRM_CheLiangGuangLi_SelectCheLiangXinXiByVehiclePaiNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi/SelectCheLiangXinXiByVehiclePaiNumberResponse" message="tns:FRM_CheLiangGuangLi_SelectCheLiangXinXiByVehiclePaiNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectCheLiangXinXiByVehicleNumber">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi/SelectCheLiangXinXiByVehicleNumber" message="tns:FRM_CheLiangGuangLi_SelectCheLiangXinXiByVehicleNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi/SelectCheLiangXinXiByVehicleNumberResponse" message="tns:FRM_CheLiangGuangLi_SelectCheLiangXinXiByVehicleNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectCheLiangMingXiXinXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi/SelectCheLiangMingXiXinXi" message="tns:FRM_CheLiangGuangLi_SelectCheLiangMingXiXinXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi/SelectCheLiangMingXiXinXiResponse" message="tns:FRM_CheLiangGuangLi_SelectCheLiangMingXiXinXi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCheZhuXinXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi/DeleteCheZhuXinXi" message="tns:FRM_CheLiangGuangLi_DeleteCheZhuXinXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi/DeleteCheZhuXinXiResponse" message="tns:FRM_CheLiangGuangLi_DeleteCheZhuXinXi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBaoXianXinXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi/DeleteBaoXianXinXi" message="tns:FRM_CheLiangGuangLi_DeleteBaoXianXinXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi/DeleteBaoXianXinXiResponse" message="tns:FRM_CheLiangGuangLi_DeleteBaoXianXinXi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCheLiangZhengJianXinXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi/DeleteCheLiangZhengJianXinXi" message="tns:FRM_CheLiangGuangLi_DeleteCheLiangZhengJianXinXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi/DeleteCheLiangZhengJianXinXiResponse" message="tns:FRM_CheLiangGuangLi_DeleteCheLiangZhengJianXinXi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCheLiangXinXi">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi/DeleteCheLiangXinXi" message="tns:FRM_CheLiangGuangLi_DeleteCheLiangXinXi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi/DeleteCheLiangXinXiResponse" message="tns:FRM_CheLiangGuangLi_DeleteCheLiangXinXi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteXiWei">
+      <wsdl:input wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi/DeleteXiWei" message="tns:FRM_CheLiangGuangLi_DeleteXiWei_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/FRM_CheLiangGuangLi/DeleteXiWeiResponse" message="tns:FRM_CheLiangGuangLi_DeleteXiWei_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi" type="tns:FRM_CheLiangGuangLi">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SelectCheLiangBianHao">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangGuangLi/SelectCheLiangBianHao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectCheLiangXinXi">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangGuangLi/SelectCheLiangXinXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectCheLiangXinXiByVehiclePaiNumber">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangGuangLi/SelectCheLiangXinXiByVehiclePaiNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectCheLiangXinXiByVehicleNumber">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangGuangLi/SelectCheLiangXinXiByVehicleNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectCheLiangMingXiXinXi">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangGuangLi/SelectCheLiangMingXiXinXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCheZhuXinXi">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangGuangLi/DeleteCheZhuXinXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBaoXianXinXi">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangGuangLi/DeleteBaoXianXinXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCheLiangZhengJianXinXi">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangGuangLi/DeleteCheLiangZhengJianXinXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCheLiangXinXi">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangGuangLi/DeleteCheLiangXinXi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteXiWei">
+      <soap:operation soapAction="http://tempuri.org/FRM_CheLiangGuangLi/DeleteXiWei" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FRM_CheLiangGuangLi">
+    <wsdl:port name="BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi" binding="tns:BLL集团客运综合管理.VehicleManage.FRM_CheLiangGuangLi">
+      <soap:address location="http://localhost:52701/BLL%E9%9B%86%E5%9B%A2%E5%AE%A2%E8%BF%90%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86.VehicleManage.FRM_CheLiangGuangLi.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

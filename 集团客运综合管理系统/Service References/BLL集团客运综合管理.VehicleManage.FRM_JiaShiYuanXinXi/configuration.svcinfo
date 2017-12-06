@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configurationSnapshot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-wcfconfigurationsnapshot">
+  <behaviors />
+  <bindings>
+    <binding digest="System.ServiceModel.Configuration.BasicHttpBindingElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089:&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data name=&quot;BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanXinXi&quot; /&gt;" bindingType="basicHttpBinding" name="BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanXinXi" />
+  </bindings>
+  <endpoints>
+    <endpoint normalizedDigest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://localhost:52701/BLL%E9%9B%86%E5%9B%A2%E5%AE%A2%E8%BF%90%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86.VehicleManage.FRM_JiaShiYuanXinXi.svc&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanXinXi&quot; contract=&quot;BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanXinXi.FRM_JiaShiYuanXinXi&quot; name=&quot;BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanXinXi&quot; /&gt;" digest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://localhost:52701/BLL%E9%9B%86%E5%9B%A2%E5%AE%A2%E8%BF%90%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86.VehicleManage.FRM_JiaShiYuanXinXi.svc&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanXinXi&quot; contract=&quot;BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanXinXi.FRM_JiaShiYuanXinXi&quot; name=&quot;BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanXinXi&quot; /&gt;" contractName="BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanXinXi.FRM_JiaShiYuanXinXi" name="BLL集团客运综合管理.VehicleManage.FRM_JiaShiYuanXinXi" />
+  </endpoints>
+</configurationSnapshot>

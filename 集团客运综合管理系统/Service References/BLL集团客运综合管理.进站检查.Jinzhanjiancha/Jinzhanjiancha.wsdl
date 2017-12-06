@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Jinzhanjiancha" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.进站检查.Jinzhanjiancha.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.进站检查.Jinzhanjiancha.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:52701/BLL集团客运综合管理.进站检查.Jinzhanjiancha.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Jinzhanjiancha_selectanquanjianxianmghu_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectanquanjianxianmghu" />
+  </wsdl:message>
+  <wsdl:message name="Jinzhanjiancha_selectanquanjianxianmghu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectanquanjianxianmghuResponse" />
+  </wsdl:message>
+  <wsdl:message name="Jinzhanjiancha_INSERTInspectionItemmingxi_InputMessage">
+    <wsdl:part name="parameters" element="tns:INSERTInspectionItemmingxi" />
+  </wsdl:message>
+  <wsdl:message name="Jinzhanjiancha_INSERTInspectionItemmingxi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:INSERTInspectionItemmingxiResponse" />
+  </wsdl:message>
+  <wsdl:message name="Jinzhanjiancha_insectjianchadan_InputMessage">
+    <wsdl:part name="parameters" element="tns:insectjianchadan" />
+  </wsdl:message>
+  <wsdl:message name="Jinzhanjiancha_insectjianchadan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insectjianchadanResponse" />
+  </wsdl:message>
+  <wsdl:message name="Jinzhanjiancha_CarSaveCheak_Selectchelaing_InputMessage">
+    <wsdl:part name="parameters" element="tns:CarSaveCheak_Selectchelaing" />
+  </wsdl:message>
+  <wsdl:message name="Jinzhanjiancha_CarSaveCheak_Selectchelaing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CarSaveCheak_SelectchelaingResponse" />
+  </wsdl:message>
+  <wsdl:message name="Jinzhanjiancha_SelectCheLiangXinXiOnchepaihao_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheLiangXinXiOnchepaihao" />
+  </wsdl:message>
+  <wsdl:message name="Jinzhanjiancha_SelectCheLiangXinXiOnchepaihao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCheLiangXinXiOnchepaihaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Jinzhanjiancha_SELECTCEXINGONCHEPIHAO_InputMessage">
+    <wsdl:part name="parameters" element="tns:SELECTCEXINGONCHEPIHAO" />
+  </wsdl:message>
+  <wsdl:message name="Jinzhanjiancha_SELECTCEXINGONCHEPIHAO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SELECTCEXINGONCHEPIHAOResponse" />
+  </wsdl:message>
+  <wsdl:message name="Jinzhanjiancha_CarSaveCheak_selectcheshudanwei_InputMessage">
+    <wsdl:part name="parameters" element="tns:CarSaveCheak_selectcheshudanwei" />
+  </wsdl:message>
+  <wsdl:message name="Jinzhanjiancha_CarSaveCheak_selectcheshudanwei_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CarSaveCheak_selectcheshudanweiResponse" />
+  </wsdl:message>
+  <wsdl:message name="Jinzhanjiancha_CarSaveCheak_selectjichayuan_InputMessage">
+    <wsdl:part name="parameters" element="tns:CarSaveCheak_selectjichayuan" />
+  </wsdl:message>
+  <wsdl:message name="Jinzhanjiancha_CarSaveCheak_selectjichayuan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CarSaveCheak_selectjichayuanResponse" />
+  </wsdl:message>
+  <wsdl:message name="Jinzhanjiancha_CarSaveCheak_updatechelaingzhuangtai_InputMessage">
+    <wsdl:part name="parameters" element="tns:CarSaveCheak_updatechelaingzhuangtai" />
+  </wsdl:message>
+  <wsdl:message name="Jinzhanjiancha_CarSaveCheak_updatechelaingzhuangtai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CarSaveCheak_updatechelaingzhuangtaiResponse" />
+  </wsdl:message>
+  <wsdl:message name="Jinzhanjiancha_selectdongtaijianchadan_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectdongtaijianchadan" />
+  </wsdl:message>
+  <wsdl:message name="Jinzhanjiancha_selectdongtaijianchadan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectdongtaijianchadanResponse" />
+  </wsdl:message>
+  <wsdl:message name="Jinzhanjiancha_selectmnigxi_InputMessage">
+    <wsdl:part name="parameters" element="tns:selectmnigxi" />
+  </wsdl:message>
+  <wsdl:message name="Jinzhanjiancha_selectmnigxi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:selectmnigxiResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Jinzhanjiancha">
+    <wsdl:operation name="selectanquanjianxianmghu">
+      <wsdl:input wsaw:Action="http://tempuri.org/Jinzhanjiancha/selectanquanjianxianmghu" message="tns:Jinzhanjiancha_selectanquanjianxianmghu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Jinzhanjiancha/selectanquanjianxianmghuResponse" message="tns:Jinzhanjiancha_selectanquanjianxianmghu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="INSERTInspectionItemmingxi">
+      <wsdl:input wsaw:Action="http://tempuri.org/Jinzhanjiancha/INSERTInspectionItemmingxi" message="tns:Jinzhanjiancha_INSERTInspectionItemmingxi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Jinzhanjiancha/INSERTInspectionItemmingxiResponse" message="tns:Jinzhanjiancha_INSERTInspectionItemmingxi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insectjianchadan">
+      <wsdl:input wsaw:Action="http://tempuri.org/Jinzhanjiancha/insectjianchadan" message="tns:Jinzhanjiancha_insectjianchadan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Jinzhanjiancha/insectjianchadanResponse" message="tns:Jinzhanjiancha_insectjianchadan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CarSaveCheak_Selectchelaing">
+      <wsdl:input wsaw:Action="http://tempuri.org/Jinzhanjiancha/CarSaveCheak_Selectchelaing" message="tns:Jinzhanjiancha_CarSaveCheak_Selectchelaing_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Jinzhanjiancha/CarSaveCheak_SelectchelaingResponse" message="tns:Jinzhanjiancha_CarSaveCheak_Selectchelaing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectCheLiangXinXiOnchepaihao">
+      <wsdl:input wsaw:Action="http://tempuri.org/Jinzhanjiancha/SelectCheLiangXinXiOnchepaihao" message="tns:Jinzhanjiancha_SelectCheLiangXinXiOnchepaihao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Jinzhanjiancha/SelectCheLiangXinXiOnchepaihaoResponse" message="tns:Jinzhanjiancha_SelectCheLiangXinXiOnchepaihao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SELECTCEXINGONCHEPIHAO">
+      <wsdl:input wsaw:Action="http://tempuri.org/Jinzhanjiancha/SELECTCEXINGONCHEPIHAO" message="tns:Jinzhanjiancha_SELECTCEXINGONCHEPIHAO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Jinzhanjiancha/SELECTCEXINGONCHEPIHAOResponse" message="tns:Jinzhanjiancha_SELECTCEXINGONCHEPIHAO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CarSaveCheak_selectcheshudanwei">
+      <wsdl:input wsaw:Action="http://tempuri.org/Jinzhanjiancha/CarSaveCheak_selectcheshudanwei" message="tns:Jinzhanjiancha_CarSaveCheak_selectcheshudanwei_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Jinzhanjiancha/CarSaveCheak_selectcheshudanweiResponse" message="tns:Jinzhanjiancha_CarSaveCheak_selectcheshudanwei_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CarSaveCheak_selectjichayuan">
+      <wsdl:input wsaw:Action="http://tempuri.org/Jinzhanjiancha/CarSaveCheak_selectjichayuan" message="tns:Jinzhanjiancha_CarSaveCheak_selectjichayuan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Jinzhanjiancha/CarSaveCheak_selectjichayuanResponse" message="tns:Jinzhanjiancha_CarSaveCheak_selectjichayuan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CarSaveCheak_updatechelaingzhuangtai">
+      <wsdl:input wsaw:Action="http://tempuri.org/Jinzhanjiancha/CarSaveCheak_updatechelaingzhuangtai" message="tns:Jinzhanjiancha_CarSaveCheak_updatechelaingzhuangtai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Jinzhanjiancha/CarSaveCheak_updatechelaingzhuangtaiResponse" message="tns:Jinzhanjiancha_CarSaveCheak_updatechelaingzhuangtai_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectdongtaijianchadan">
+      <wsdl:input wsaw:Action="http://tempuri.org/Jinzhanjiancha/selectdongtaijianchadan" message="tns:Jinzhanjiancha_selectdongtaijianchadan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Jinzhanjiancha/selectdongtaijianchadanResponse" message="tns:Jinzhanjiancha_selectdongtaijianchadan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="selectmnigxi">
+      <wsdl:input wsaw:Action="http://tempuri.org/Jinzhanjiancha/selectmnigxi" message="tns:Jinzhanjiancha_selectmnigxi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Jinzhanjiancha/selectmnigxiResponse" message="tns:Jinzhanjiancha_selectmnigxi_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLL集团客运综合管理.进站检查.Jinzhanjiancha" type="tns:Jinzhanjiancha">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="selectanquanjianxianmghu">
+      <soap:operation soapAction="http://tempuri.org/Jinzhanjiancha/selectanquanjianxianmghu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="INSERTInspectionItemmingxi">
+      <soap:operation soapAction="http://tempuri.org/Jinzhanjiancha/INSERTInspectionItemmingxi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insectjianchadan">
+      <soap:operation soapAction="http://tempuri.org/Jinzhanjiancha/insectjianchadan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CarSaveCheak_Selectchelaing">
+      <soap:operation soapAction="http://tempuri.org/Jinzhanjiancha/CarSaveCheak_Selectchelaing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectCheLiangXinXiOnchepaihao">
+      <soap:operation soapAction="http://tempuri.org/Jinzhanjiancha/SelectCheLiangXinXiOnchepaihao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SELECTCEXINGONCHEPIHAO">
+      <soap:operation soapAction="http://tempuri.org/Jinzhanjiancha/SELECTCEXINGONCHEPIHAO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CarSaveCheak_selectcheshudanwei">
+      <soap:operation soapAction="http://tempuri.org/Jinzhanjiancha/CarSaveCheak_selectcheshudanwei" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CarSaveCheak_selectjichayuan">
+      <soap:operation soapAction="http://tempuri.org/Jinzhanjiancha/CarSaveCheak_selectjichayuan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CarSaveCheak_updatechelaingzhuangtai">
+      <soap:operation soapAction="http://tempuri.org/Jinzhanjiancha/CarSaveCheak_updatechelaingzhuangtai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectdongtaijianchadan">
+      <soap:operation soapAction="http://tempuri.org/Jinzhanjiancha/selectdongtaijianchadan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="selectmnigxi">
+      <soap:operation soapAction="http://tempuri.org/Jinzhanjiancha/selectmnigxi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Jinzhanjiancha">
+    <wsdl:port name="BLL集团客运综合管理.进站检查.Jinzhanjiancha" binding="tns:BLL集团客运综合管理.进站检查.Jinzhanjiancha">
+      <soap:address location="http://localhost:52701/BLL%E9%9B%86%E5%9B%A2%E5%AE%A2%E8%BF%90%E7%BB%BC%E5%90%88%E7%AE%A1%E7%90%86.%E8%BF%9B%E7%AB%99%E6%A3%80%E6%9F%A5.Jinzhanjiancha.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
